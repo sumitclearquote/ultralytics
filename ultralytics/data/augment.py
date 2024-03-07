@@ -846,13 +846,6 @@ class Albumentations:
                 A.ImageCompression(quality_lower=75, p=0.0),
             ]
             
-            #Add custom augmentation here
-            T += [A.HorizontalFlip(p=0.2),
-                  A.VerticalFlip(p=0.15),
-                  A.RandomCrop(height=480, width=480, p=0.15),
-                  A.Rotate(limit= 180, p =0.1)
-                  ]
-            
             self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
 
             LOGGER.info(prefix + ", ".join(f"{x}".replace("always_apply=False, ", "") for x in T if x.p))
