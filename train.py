@@ -21,7 +21,7 @@ model = YOLO(model_file)
 project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
 
 
-config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/LP_yolo_dataset/lp_data.yaml", 
+config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
             'epochs': 100,
             'batch': 320,
             'imgsz':320,
