@@ -48,8 +48,40 @@ def __init__(self, p=1.0):
 Albumentations.__init__ = __init__
 
 
+#==============================================================================================================
+#Yolov8n --->
+print("Training yolov8n ...\n")
+# Add other HPs here
+model_file = "yolov8n.yaml"
+
+train_version = "v1_n2"
+
+#Load a Model
+model = YOLO(model_file)
+
+#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
+project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
+
+
+config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
+            'epochs': 1,
+            'batch': 160,
+            'imgsz':480,
+            'device':device,
+            'patience':10,
+            'project':project_path,
+            'name':train_version,
+            'close_mosaic': 5,
+            'mosaic':0.5
+        }
+
+# Train the Model -> yolov8n
+results = model.train(**config)
+
 #============================================================================================================
 #YOLOv8s --->
+print("Training yolov8s ...\n")
+
 # Add other HPs here
 model_file = "yolov8s.yaml"
 
@@ -75,33 +107,4 @@ config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_da
         }
 
 # Train the Model -> yolov8s
-results = model.train(**config)
-
-#==============================================================================================================
-#Yolov8n --->
-# Add other HPs here
-model_file = "yolov8n.yaml"
-
-train_version = "v1_n"
-
-#Load a Model
-model = YOLO(model_file)
-
-#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
-project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
-
-
-config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 1,
-            'batch': 160,
-            'imgsz':480,
-            'device':device,
-            'patience':10,
-            'project':project_path,
-            'name':train_version,
-            'close_mosaic': 5,
-            'mosaic':0.5
-        }
-
-# Train the Model -> yolov8n
 results = model.train(**config)
