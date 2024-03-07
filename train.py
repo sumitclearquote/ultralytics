@@ -64,16 +64,15 @@ project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
 
 
 config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 100,
-            'batch': 320,
-            'imgsz':320,
+            'epochs': 1,
+            'batch': 240,
+            'imgsz':480,
             'device':device,
             'patience':10,
             'project':project_path,
             'name':train_version,
             'close_mosaic': 5,
-            'mosaic':0.5,
-            'augment':True
+            'mosaic':0.5
         }
 
 # Train the Model -> yolov8s
