@@ -37,7 +37,6 @@ def __init__(self, p=1.0):
         
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
 
-        print(prefix + ", ".join(f"{x}".replace("always_apply=False, ", "") for x in T if x.p), flush = True)
         LOGGER.info(prefix + ", ".join(f"{x}".replace("always_apply=False, ", "") for x in T if x.p))
     except ImportError:  # package not installed, skip
         pass
@@ -65,7 +64,7 @@ project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
 
 config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
             'epochs': 1,
-            'batch': 240,
+            'batch': 160,
             'imgsz':480,
             'device':device,
             'patience':10,
