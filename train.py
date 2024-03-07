@@ -11,7 +11,7 @@ def __init__(self, p=1.0):
     """Initialize the transform object for YOLO bbox formatted params."""
     self.p = p
     self.transform = None
-    prefix = colorstr("albumentations: ")
+    prefix = colorstr("\n\nalbumentations: ")
     try:
         import albumentations as A
 
@@ -37,6 +37,7 @@ def __init__(self, p=1.0):
         
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
 
+        print(prefix + ", ".join(f"{x}".replace("always_apply=False, ", "") for x in T if x.p), flush = True)
         LOGGER.info(prefix + ", ".join(f"{x}".replace("always_apply=False, ", "") for x in T if x.p))
     except ImportError:  # package not installed, skip
         pass
