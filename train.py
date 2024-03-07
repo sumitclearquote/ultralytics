@@ -74,7 +74,7 @@ config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_da
             'name':train_version,
             'close_mosaic': 5,
             'mosaic':0.5,
-	    'resume'=True
+	    'resume':True
         }
 
 # Train the Model -> yolov8n
