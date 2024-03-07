@@ -2,8 +2,7 @@
 #from ultralytics.ultralytics.utils import LOGGER, colorstr
 #from ultralytics.ultralytics.utils.checks import check_version
 import sys
-sys.path.append("ultralytics/ultralytics")
-from ultralytics.ultralytics import YOLO
+from ultralytics import YOLO
 
 
 import torch
