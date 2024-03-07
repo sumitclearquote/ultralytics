@@ -54,18 +54,18 @@ print("Training yolov8n ...\n")
 # Add other HPs here
 model_file = "yolov8n.yaml"
 
-train_version = "v1_n2"
+train_version = "v1_n"
 
 #Load a Model
 model = YOLO(model_file)
 
-#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
-project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
+project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
+#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
 
 
 config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 1,
-            'batch': 160,
+            'epochs': 100,
+            'batch': 192,
             'imgsz':480,
             'device':device,
             'patience':10,
@@ -90,12 +90,12 @@ train_version = "v1_s"
 #Load a Model
 model = YOLO(model_file)
 
-#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
-project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
+project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
+#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
 
 
 config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 1,
+            'epochs': 100,
             'batch': 128,
             'imgsz':480,
             'device':device,
