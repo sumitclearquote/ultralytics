@@ -55,16 +55,17 @@ print("Training yolov8n ...\n")
 model_file = "yolov8n.yaml"
 
 train_version = "v1_n"
+trained_model = f"my_runs/lpblur/{train_version}/weights/last.pt"
 
 #Load a Model
-model = YOLO(model_file)
+model = YOLO(trained_model)
 
 project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
 #project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
 
 
 config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 100,
+            'epochs': 10,
             'batch': 192,
             'imgsz':480,
             'device':device,
@@ -72,12 +73,14 @@ config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_da
             'project':project_path,
             'name':train_version,
             'close_mosaic': 5,
-            'mosaic':0.5
+            'mosaic':0.5,
+	    'resume'=True
         }
 
 # Train the Model -> yolov8n
 results = model.train(**config)
 
+'''
 #============================================================================================================
 #YOLOv8s --->
 print("Training yolov8s ...\n")
@@ -108,3 +111,4 @@ config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_da
 
 # Train the Model -> yolov8s
 results = model.train(**config)
+'''
