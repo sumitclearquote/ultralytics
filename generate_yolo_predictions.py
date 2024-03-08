@@ -59,7 +59,7 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 
 if __name__ == '__main__':
     iteration = "v1_s"
-    save_results = True
+    save_results = False
     dtype = "val"
     conf_thresholds = [0.45, 0.4, 0.35, 0.3, 0.25, 0.2]
     iou_nms_thresh = 0.7
@@ -71,6 +71,7 @@ if __name__ == '__main__':
     #Load Model
     model = YOLO(f"my_runs/lpblur/{iteration}/weights/best.pt").to(device)
     
+    print("Model is on: ", model.device)
     
     for conf_threshold in conf_thresholds:
         if dtype == "val":
