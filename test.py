@@ -10,7 +10,7 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 model_type = "v1_n"
 
-model_path = f"ultralytics/my_runs/lpblur/{model_type}/weights/best.pt"
+model_path = f"my_runs/lpblur/{model_type}/weights/best.pt"
 model = YOLO(model_path)
 
 conf = float(sys.argv[2])
@@ -28,7 +28,7 @@ config = {'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_data
         'save_conf' : True, 
         'save_json' : True, 
         'save_txt' : True,
-        'project' : f"ultralytics/my_runs/lpblur/{model_type}/val", 
+        'project' : f"my_runs/lpblur/{model_type}/val", 
         'name' : f"val_analysis_{conf}_{iou_nms_thresh}"
 
         }
