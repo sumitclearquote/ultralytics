@@ -8,14 +8,14 @@ import torch
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 
-model_type = "v1_s"
+model_type = "v1_n"
 
 model_path = f"my_runs/lpblur/{model_type}/weights/best.pt"
 model = YOLO(model_path)
 
 conf = float(sys.argv[2])
 iou_nms_thresh = float(sys.argv[1]) #default=0.7
-batch_size = 160 #192
+batch_size = 192 #160
 
 
 config = {'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml",  
