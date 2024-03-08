@@ -60,19 +60,28 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 if __name__ == '__main__':
     iteration = "v1_s"
     save_results = True
-    imgdir = "../datasets/spinnydata1_yolo_dataset/val/images"
-    conf_threshold = 0.001
+    dtype = "spinny"
+    conf_thresholds = [0.45, 0.4, 0.35, 0.3, 0.25, 0.2]
     iou_nms_thresh = 0.7
 
 
-    dest_dir = f"my_runs/lpblur/{iteration}/val/spinny_val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
-    os.makedirs(dest_dir, exist_ok=True)
+    
 
     names = {0: 'licenseplate'}
     #Load Model
     model = YOLO(f"my_runs/lpblur/{iteration}/weights/best.pt")
-
-   
-    results_dict = generate_predictions(imgdir, model,dest_dir, conf_threshold = conf_threshold, iou_nms_thresh=iou_nms_thresh, save_results = save_results)
     
-    print("Total Images predicted on: ", len(results_dict))
+    
+    for conf_threshold in conf_thresholds:
+        if dtype == "val":
+            imgdir = "../datasets/LP_yolo_dataset/val/images"
+            dest_dir = f"my_runs/lpblur/{iteration}/val/val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
+        elif dtype == "spinny":
+            imgdir = "../datasets/spinnydata1_yolo_dataset/val/images"
+            dest_dir = f"my_runs/lpblur/{iteration}/val/spinny_val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
+        
+        os.makedirs(dest_dir, exist_ok=True)
+        
+        results_dict = generate_predictions(imgdir, model,dest_dir, conf_threshold = conf_threshold, iou_nms_thresh=iou_nms_thresh, save_results = save_results)
+    
+        print(f"Total Images predicted on:  {len(results_dict)} for confidence: {conf_threshold}")
