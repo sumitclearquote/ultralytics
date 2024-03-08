@@ -60,7 +60,7 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 if __name__ == '__main__':
     iteration = "v1_s"
     save_results = True
-    dtype = "spinny"
+    dtype = "val"
     conf_thresholds = [0.45, 0.4, 0.35, 0.3, 0.25, 0.2]
     iou_nms_thresh = 0.7
 
