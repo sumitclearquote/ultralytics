@@ -23,16 +23,17 @@ def __init__(self, p=1.0):
             A.MedianBlur(p=0.01),
             A.ToGray(p=0.01),
             A.CLAHE(p=0.01),
-            A.RandomBrightnessContrast(p=0.0),
+            A.RandomBrightnessContrast(p=0.05),
             A.RandomGamma(p=0.0),
-            A.ImageCompression(quality_lower=75, p=0.0),
+            A.ImageCompression(quality_lower=75, p=0.02),
         ]
         
         #Add custom augmentation here
         T += [A.HorizontalFlip(p=0.2),
                 A.VerticalFlip(p=0.15),
-                A.RandomCrop(height=480, width=480, p=0.15),
-                A.Rotate(limit= 180, p =0.1)
+                A.RandomSizedBBoxSafeCrop(height=224, width=224, erosion_rate=0.7, p = 0.12),
+                A.RandomCrop(height=480, width=480, p=0.2),
+                A.Rotate(limit= 180, p =0.2)
                 ]
         
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
@@ -49,6 +50,80 @@ Albumentations.__init__ = __init__
 
 
 #==============================================================================================================
+
+
+#============================================================================================================
+'''
+#YOLOv8s --->
+print("Training yolov8s ...\n")
+
+# Add other HPs here
+model_file = "yolov8s.yaml"
+
+train_version = "v2_s"
+
+#Load a Model
+model = YOLO(model_file)
+
+project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
+#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
+
+
+config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
+            'epochs': 80,
+            'batch': 128,
+            'imgsz':480,
+            'device':device,
+            'patience':10,
+            'project':project_path,
+            'name':train_version,
+            'close_mosaic': 5,
+            'mosaic':0.55
+        }
+
+# Train the Model -> yolov8s
+results = model.train(**config)
+'''
+
+# YOLOv8m  ================================================================================================================
+print("Training yolov8m ...\n")
+
+# Add other HPs here
+model_file = "yolov8m.yaml"
+
+train_version = "v2_m"
+
+#Load a Model
+model = YOLO(model_file)
+
+#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
+project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
+
+
+config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
+            'epochs': 80,
+            'batch': 96,
+            'imgsz':480,
+            'device':device,
+            'patience':10,
+            'project':project_path,
+            'name':train_version,
+            'close_mosaic': 5,
+            'mosaic':0.55
+        }
+
+# Train the Model -> yolov8m
+results = model.train(**config)
+
+
+# YOLOv8m  ============================================================================================
+
+
+
+
+
+
+'''
 #Yolov8n --->
 print("Training yolov8n ...\n")
 # Add other HPs here
@@ -78,36 +153,4 @@ config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_da
 
 # Train the Model -> yolov8n
 results = model.train(**config)
-
-
-#============================================================================================================
-#YOLOv8s --->
-print("Training yolov8s ...\n")
-
-# Add other HPs here
-model_file = "yolov8s.yaml"
-
-train_version = "v1_s"
-
-#Load a Model
-model = YOLO(model_file)
-
-project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
-#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
-
-
-config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 55,
-            'batch': 128,
-            'imgsz':480,
-            'device':device,
-            'patience':10,
-            'project':project_path,
-            'name':train_version,
-            'close_mosaic': 5,
-            'mosaic':0.5
-        }
-
-# Train the Model -> yolov8s
-results = model.train(**config)
-
+'''
