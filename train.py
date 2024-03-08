@@ -31,7 +31,7 @@ def __init__(self, p=1.0):
         #Add custom augmentation here
         T += [A.HorizontalFlip(p=0.2),
                 A.VerticalFlip(p=0.15),
-                A.RandomSizedBBoxSafeCrop(height=224, width=224, erosion_rate=0.7, p = 0.12),
+                A.RandomResizedCrop(height=480, width=480,scale=(0.1, 0.3) ,p =0.15),
                 A.RandomCrop(height=480, width=480, p=0.2),
                 A.Rotate(limit= 180, p =0.2)
                 ]
