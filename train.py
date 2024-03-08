@@ -101,7 +101,7 @@ project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
 
 
 config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 80,
+            'epochs': 1,
             'batch': 96,
             'imgsz':480,
             'device':device,
