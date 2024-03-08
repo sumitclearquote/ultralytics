@@ -20,7 +20,7 @@ conf = float(sys.argv[2])
 iou_nms_thresh = float(sys.argv[1]) #default=0.7
 batch_size = 160 if model_type == "v1_s" else 192 if model_type=="v1_n" else 1
 
-if data=='val' #Use validation set
+if data=='val': #Use validation set
         data_path =  "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml"
 elif data == "spinny":
         data_path = "/home/paintfrmladmin01/datadrive/LPBlur/datasets/spinnydata1_yolo_dataset/lp_data.yaml"
