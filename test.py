@@ -34,6 +34,6 @@ config = {'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_data
         }
 
 
-print(f"Generating Predictions for Confidence: {conf}")
+print(f"Generating Predictions for NMS:{iou_nms_thresh} and Confidence: {conf}")
 
 res = model.val(**config)
