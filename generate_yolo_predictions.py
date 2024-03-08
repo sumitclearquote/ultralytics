@@ -69,7 +69,7 @@ if __name__ == '__main__':
 
     names = {0: 'licenseplate'}
     #Load Model
-    model = YOLO(f"my_runs/lpblur/{iteration}/weights/best.pt")
+    model = YOLO(f"my_runs/lpblur/{iteration}/weights/best.pt").to(device)
     
     
     for conf_threshold in conf_thresholds:
