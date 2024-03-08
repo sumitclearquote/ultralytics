@@ -52,9 +52,7 @@ Albumentations.__init__ = __init__
 #==============================================================================================================
 
 
-#============================================================================================================
-'''
-#YOLOv8s --->
+#YOLOv8s --->============================================================================================================
 print("Training yolov8s ...\n")
 
 # Add other HPs here
@@ -83,9 +81,9 @@ config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_da
 
 # Train the Model -> yolov8s
 results = model.train(**config)
-'''
 
-# YOLOv8m  ================================================================================================================
+
+# YOLOv8m START ================================================================================================================
 print("Training yolov8m ...\n")
 
 # Add other HPs here
@@ -96,12 +94,12 @@ train_version = "v2_m"
 #Load a Model
 model = YOLO(model_file)
 
-#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
-project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
+project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
+#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
 
 
 config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 1,
+            'epochs': 80,
             'batch': 74,
             'imgsz':480,
             'device':device,
@@ -119,10 +117,10 @@ results = model.train(**config)
 # YOLOv8m  ============================================================================================
 
 
+#END
 
 
-
-
+# YOLOv8n  ============================================================================================
 '''
 #Yolov8n --->
 print("Training yolov8n ...\n")
