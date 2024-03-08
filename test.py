@@ -29,7 +29,7 @@ config = {'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_data
         'save_json' : True, 
         'save_txt' : True,
         'project' : f"my_runs/lpblur/{model_type}/val", 
-        'name' : f"val_analysis_075iou_{conf}_{iou_nms_thresh}"
+        'name' : f"val_analysis_{iou_nms_thresh}_{conf}"
 
         }
 
