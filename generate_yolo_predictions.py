@@ -60,20 +60,19 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 if __name__ == '__main__':
     iteration = "v1_s"
     save_results = True
+    imgdir = "../datasets/spinnydata1_yolo_dataset/val/images"
     conf_threshold = 0.001
     iou_nms_thresh = 0.7
 
 
-    dest_dir = f"my_runs/lpblur/{iteration}/val/val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
+    dest_dir = f"my_runs/lpblur/{iteration}/val/spinny_val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
     os.makedirs(dest_dir, exist_ok=True)
 
     names = {0: 'licenseplate'}
     #Load Model
     model = YOLO(f"my_runs/lpblur/{iteration}/weights/best.pt")
 
-    imgdir = "../datasets/LP_yolo_dataset/val/images"
-
-
+   
     results_dict = generate_predictions(imgdir, model,dest_dir, conf_threshold = conf_threshold, iou_nms_thresh=iou_nms_thresh, save_results = save_results)
     
     print("Total Images predicted on: ", len(results_dict))
