@@ -14,6 +14,7 @@ data = "val" #[val, 'spinny]
 
 
 model_path = f"my_runs/lpblur/{model_type}/weights/best.pt"
+print("Loading model from: ", model_path)
 model = YOLO(model_path)
 
 conf = float(sys.argv[2])
