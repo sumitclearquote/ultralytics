@@ -59,7 +59,7 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 
 
 if __name__ == '__main__':
-    iteration = "v2_s"
+    iteration = "v2_m"
     save_results = True
     dtype = "val"
     conf_thresholds = [0.1, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8]
