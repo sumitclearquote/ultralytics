@@ -8,7 +8,7 @@ import torch
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 
-model_type = "v2_s"
+model_type = "v2_m"
 data = "val" #[val, 'spinny]
 
 
