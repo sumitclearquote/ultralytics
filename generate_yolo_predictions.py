@@ -59,31 +59,30 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 
 
 if __name__ == '__main__':
-    iteration = "v2_m"
+    iterations = ["v2_s", "v2_m"]
     save_results = True
-    dtype = "val"
-    conf_thresholds = [0.1, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8]
+    dtype = "spinny"
+    conf_thresholds = [0.001, 0.1, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8]
+
     iou_nms_thresh = 0.7
 
 
-    
-
     names = {0: 'licenseplate'}
-    #Load Model
-    model = YOLO(f"my_runs/lpblur/{iteration}/weights/best.pt").to(device)
     
-    print("Model is on: ", model.device)
     
-    for conf_threshold in conf_thresholds:
-        if dtype == "val":
-            imgdir = "../datasets/LP_yolo_dataset/val/images"
-            dest_dir = f"my_runs/lpblur/{iteration}/val/val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
-        elif dtype == "spinny":
-            imgdir = "../datasets/spinnydata1_yolo_dataset/val/images"
-            dest_dir = f"my_runs/lpblur/{iteration}/val/spinny_val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
+    for iteration in iterations:
+        model = YOLO(f"my_runs/lpblur/{iteration}/weights/best.pt").to(device) #Load Model
+        print("Model is on: ", model.device)
+        for conf_threshold in conf_thresholds:
+            if dtype == "val":
+                imgdir = "../datasets/LP_yolo_dataset/val/images"
+                dest_dir = f"my_runs/lpblur/{iteration}/val/val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
+            elif dtype == "spinny":
+                imgdir = "../datasets/spinnydata2_yolo_dataset/val/images"
+                dest_dir = f"my_runs/lpblur/{iteration}/val/spinny2_val_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
+            
+            os.makedirs(dest_dir, exist_ok=True)
+            
+            results_dict = generate_predictions(imgdir, model,dest_dir, conf_threshold = conf_threshold, iou_nms_thresh=iou_nms_thresh, save_results = save_results)
         
-        os.makedirs(dest_dir, exist_ok=True)
-        
-        results_dict = generate_predictions(imgdir, model,dest_dir, conf_threshold = conf_threshold, iou_nms_thresh=iou_nms_thresh, save_results = save_results)
-    
-        print(f"Total Images predicted on:  {len(results_dict)} for confidence: {conf_threshold}")
+            print(f"Total Images predicted on:  {len(results_dict)} for confidence: {conf_threshold}")

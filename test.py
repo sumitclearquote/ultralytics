@@ -9,7 +9,7 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 
 model_type = "v2_m"
-data = "val" #[val, 'spinny]
+data = "spinny2" #[val, spinny2]
 
 
 
@@ -23,8 +23,8 @@ batch_size = 160 if model_type.endswith("s") else 192 if model_type.endswith("n"
 
 if data=='val': #Use validation set
         data_path =  "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml"
-elif data == "spinny":
-        data_path = "/home/paintfrmladmin01/datadrive/LPBlur/datasets/spinnydata1_yolo_dataset/lp_data.yaml"
+elif data == "spinny2":
+        data_path = "/home/paintfrmladmin01/datadrive/LPBlur/datasets/spinnydata2_yolo_dataset/lp_data.yaml"
 
 config = {'data': data_path,  
           'imgsz' : 480,
@@ -37,7 +37,7 @@ config = {'data': data_path,
         'save_json' : True, 
         'save_txt' : True,
         'project' : f"my_runs/lpblur/{model_type}/val", 
-        'name' : f"val_analysis_{iou_nms_thresh}_{conf}"
+        'name' : f"{data}_analysis_{iou_nms_thresh}_{conf}"
 
         }
 
