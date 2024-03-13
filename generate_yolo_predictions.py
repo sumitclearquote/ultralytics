@@ -14,6 +14,7 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
     results_dict = defaultdict(lambda: defaultdict(list))
   
     for imgname in tqdm(os.listdir(imgdir)):
+        if imgname.endswith("json"):continue
         #if imgname != "":continue
         imgpath = f"{imgdir}/{imgname}"
         
@@ -59,11 +60,11 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 
 
 if __name__ == '__main__':
-    iterations = ["v2_s", "v2_m"]
+    iterations = ["v2_m"]
     save_results = True
-    dtype = "spinny2" #[val, spinny2, ]
-    conf_thresholds = [0.001, 0.1, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8]
-
+    dtype = "audit" #[val, spinny2, "audit"]
+    #conf_thresholds = [0.001, 0.1, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8]
+    conf_thresholds = [0.001, 0.1]
     iou_nms_thresh = 0.7
 
 
@@ -80,7 +81,12 @@ if __name__ == '__main__':
             elif dtype == "spinny2":
                 imgdir = "../datasets/spinnydata2_yolo_dataset/val/images"
                 dest_dir = f"my_runs/lpblur/{iteration}/val/spinny2_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
-            
+            elif dtype == "spinny3": #200quotes
+                imgdir = "../datasets/spinny_data_200quotes"
+                dest_dir = f"my_runs/lpblur/{iteration}/val/spinny3_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
+            elif dtype== "audit":
+                imgdir = "../datasets/audit_data"
+                dest_dir = f"my_runs/lpblur/{iteration}/val/audit_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
             os.makedirs(dest_dir, exist_ok=True)
             
             print(f"Making Predictions using model {iteration} on {dtype} with NMS_THRESH {iou_nms_thresh} and conf_thresh {conf_threshold}")
