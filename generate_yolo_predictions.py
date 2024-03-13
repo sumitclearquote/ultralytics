@@ -64,7 +64,7 @@ if __name__ == '__main__':
     save_results = True
     dtype = "audit" #[val, spinny2, "audit"]
     #conf_thresholds = [0.001, 0.1, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8]
-    conf_thresholds = [0.35]
+    conf_thresholds = [0.4]
     iou_nms_thresh = 0.7
 
 
