@@ -60,10 +60,10 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 
 
 if __name__ == '__main__':
-    iterations = ["v2_s"]
+    iterations = ["v2_m"]
     save_results = True
-    dtype = "audit" #[val, spinny2, "audit"]
-    conf_thresholds = [0.4]
+    dtype = "quotes200" #[val, spinny2, "audit", "quotes200"]
+    conf_thresholds = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8]
     iou_nms_thresh = 0.7
 
 
@@ -80,9 +80,9 @@ if __name__ == '__main__':
             elif dtype == "spinny2":
                 imgdir = "../datasets/spinnydata2_yolo_dataset/val/images"
                 dest_dir = f"my_runs/lpblur/{iteration}/val/spinny2_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
-            elif dtype == "spinny3": #200quotes
-                imgdir = "../datasets/spinny_data_200quotes"
-                dest_dir = f"my_runs/lpblur/{iteration}/val/spinny3_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
+            elif dtype == "quotes200": #200quotes
+                imgdir = f"../datasets/{dtype}"
+                dest_dir = f"my_runs/lpblur/{iteration}/val/{dtype}_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
             elif dtype== "audit":
                 imgdir = "../datasets/audit_data"
                 dest_dir = f"my_runs/lpblur/{iteration}/val/audit_analysis_{str(iou_nms_thresh)}_{str(conf_threshold)}"
