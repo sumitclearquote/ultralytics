@@ -69,17 +69,8 @@
   ]
  },
  "Ezpnsm4bQeuiJZ8cSjo8HA_file.jpeg": {
-  "bbox": [
-   [
-    1397,
-    2197,
-    1592,
-    2287
-   ]
-  ],
-  "scores": [
-   0.3614
-  ]
+  "bbox": [],
+  "scores": []
  },
  "tT1kkHjBR5i2Z0g7oBPT3w_file.jpeg": {
   "bbox": [],
@@ -304,17 +295,8 @@
   ]
  },
  "cEM9AzlPSoy40xUh7Q8UqA_file.jpeg": {
-  "bbox": [
-   [
-    1275,
-    1621,
-    1672,
-    1814
-   ]
-  ],
-  "scores": [
-   0.2629
-  ]
+  "bbox": [],
+  "scores": []
  },
  "HQBJwPe7SB2VQ6m2eWhsmw_file.jpeg": {
   "bbox": [
@@ -359,17 +341,8 @@
   "scores": []
  },
  "N5PU43UvQ0y7J2cTSX7AIg_file.jpeg": {
-  "bbox": [
-   [
-    1088,
-    1031,
-    1714,
-    1490
-   ]
-  ],
-  "scores": [
-   0.6753
-  ]
+  "bbox": [],
+  "scores": []
  },
  "57MeJnS6QqCysw0iXMyfpQ_file.jpeg": {
   "bbox": [
@@ -518,24 +491,8 @@
   "scores": []
  },
  "nmuecRN1RlWnYbyyHmPZnQ_file.jpeg": {
-  "bbox": [
-   [
-    1563,
-    1821,
-    2560,
-    2087
-   ],
-   [
-    1565,
-    1821,
-    2166,
-    2055
-   ]
-  ],
-  "scores": [
-   0.8129,
-   0.4835
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Z2B4YAtR_S0OcV7H9xX8jCg_file.jpeg": {
   "bbox": [],
@@ -1241,17 +1198,8 @@
   ]
  },
  "uaRwqGMkQs2BEbztlX_So9Q_file.jpeg": {
-  "bbox": [
-   [
-    752,
-    2205,
-    2481,
-    2429
-   ]
-  ],
-  "scores": [
-   0.6333
-  ]
+  "bbox": [],
+  "scores": []
  },
  "wyJcWPc2SSWUzHBI3n8siw_file.jpeg": {
   "bbox": [
@@ -1318,63 +1266,20 @@
   "scores": []
  },
  "qkUhUpkoQ0astO_YYHqSSQ_file.jpeg": {
-  "bbox": [
-   [
-    456,
-    1701,
-    633,
-    2019
-   ],
-   [
-    434,
-    1638,
-    644,
-    2042
-   ]
-  ],
-  "scores": [
-   0.5402,
-   0.3058
-  ]
+  "bbox": [],
+  "scores": []
  },
  "uqy2BmHvAQaKrikySLw5HWw_file.jpeg": {
-  "bbox": [
-   [
-    1666,
-    959,
-    2002,
-    1424
-   ]
-  ],
-  "scores": [
-   0.3413
-  ]
+  "bbox": [],
+  "scores": []
  },
  "QCi4JJcYTaOioEoooKdg7w_file.jpeg": {
-  "bbox": [
-   [
-    390,
-    1302,
-    568,
-    1736
-   ]
-  ],
-  "scores": [
-   0.4928
-  ]
+  "bbox": [],
+  "scores": []
  },
  "3wmXaT1TQ5u8N_YP9mL6dQ_file.jpeg": {
-  "bbox": [
-   [
-    2244,
-    1626,
-    2775,
-    1904
-   ]
-  ],
-  "scores": [
-   0.3426
-  ]
+  "bbox": [],
+  "scores": []
  },
  "02BbiNvkhT3awGaJxG8qufQ_file.jpeg": {
   "bbox": [
@@ -1455,30 +1360,12 @@
   ]
  },
  "CbdXJyfzQsSGQ2r5WSyxPQ_file.jpeg": {
-  "bbox": [
-   [
-    1438,
-    1876,
-    1873,
-    2046
-   ]
-  ],
-  "scores": [
-   0.5304
-  ]
+  "bbox": [],
+  "scores": []
  },
  "GyaUgn4WSgugoKEqTLjvtA_file.jpeg": {
-  "bbox": [
-   [
-    593,
-    1599,
-    1141,
-    1963
-   ]
-  ],
-  "scores": [
-   0.353
-  ]
+  "bbox": [],
+  "scores": []
  },
  "DM7PPB7tTsSHyKnptG3Rdg_file.jpeg": {
   "bbox": [
@@ -1811,17 +1698,8 @@
   ]
  },
  "rnSjLfFsSTm8hsc9O0aimQ_file.jpeg": {
-  "bbox": [
-   [
-    3630,
-    971,
-    3840,
-    1576
-   ]
-  ],
-  "scores": [
-   0.3717
-  ]
+  "bbox": [],
+  "scores": []
  },
  "xXvrsciPTDy_sDoMjp4KDQ_file.jpeg": {
   "bbox": [
@@ -2179,17 +2057,8 @@
   ]
  },
  "fOW_MGOMTe67NRcMbr6U8Q_file.jpeg": {
-  "bbox": [
-   [
-    4001,
-    1386,
-    4079,
-    1739
-   ]
-  ],
-  "scores": [
-   0.3968
-  ]
+  "bbox": [],
+  "scores": []
  },
  "KFHNGRo2RLq1kZ2BfHnuh3w_file.jpeg": {
   "bbox": [
@@ -2256,17 +2125,8 @@
   ]
  },
  "6XwDzDaeT3mqYgv02aX0mw_file.jpeg": {
-  "bbox": [
-   [
-    340,
-    612,
-    636,
-    956
-   ]
-  ],
-  "scores": [
-   0.661
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Cg1bP5IDRKO7lPDkr0EOIg_file.jpeg": {
   "bbox": [
@@ -2505,17 +2365,8 @@
   ]
  },
  "A7yR5ONKQxeRttLkoCHhIQ_file.jpeg": {
-  "bbox": [
-   [
-    411,
-    965,
-    623,
-    1411
-   ]
-  ],
-  "scores": [
-   0.5812
-  ]
+  "bbox": [],
+  "scores": []
  },
  "1Jj0tiHlQIOsrKMAbtIvFA_file.jpeg": {
   "bbox": [
@@ -2621,17 +2472,8 @@
   "scores": []
  },
  "4s9_82BLdQKSM4MOGePH8EQ_file.jpeg": {
-  "bbox": [
-   [
-    2848,
-    929,
-    3062,
-    1407
-   ]
-  ],
-  "scores": [
-   0.5416
-  ]
+  "bbox": [],
+  "scores": []
  },
  "QC5JZq3ATxi0m4xa_KquuQ_file.jpeg": {
   "bbox": [],
@@ -2801,17 +2643,8 @@
   "scores": []
  },
  "Z_5Ke5VoR_yxfgZlRUx0rQ_file.jpeg": {
-  "bbox": [
-   [
-    78,
-    882,
-    261,
-    1407
-   ]
-  ],
-  "scores": [
-   0.6806
-  ]
+  "bbox": [],
+  "scores": []
  },
  "CUnJOxeVRyajXHnlj5Qb9Q_file.jpeg": {
   "bbox": [
@@ -2844,17 +2677,8 @@
   "scores": []
  },
  "VUvIjs2BNT6WEZb6uEsIyuQ_file.jpeg": {
-  "bbox": [
-   [
-    2458,
-    1382,
-    2721,
-    1632
-   ]
-  ],
-  "scores": [
-   0.3583
-  ]
+  "bbox": [],
+  "scores": []
  },
  "DygAkVBjRoO7khmUtBmPTg_file.jpeg": {
   "bbox": [
@@ -2930,17 +2754,8 @@
   "scores": []
  },
  "fhUchWojSDyqiaZzv21xkQ_file.jpeg": {
-  "bbox": [
-   [
-    760,
-    2095,
-    2432,
-    2334
-   ]
-  ],
-  "scores": [
-   0.6666
-  ]
+  "bbox": [],
+  "scores": []
  },
  "hbyUscIoQrKypwmfRJE5bw_file.jpeg": {
   "bbox": [
@@ -3046,17 +2861,8 @@
   "scores": []
  },
  "abCw0qvIS4GL2Bf6egl3yew_file.jpeg": {
-  "bbox": [
-   [
-    0,
-    1333,
-    102,
-    1584
-   ]
-  ],
-  "scores": [
-   0.4072
-  ]
+  "bbox": [],
+  "scores": []
  },
  "qVDm2B5YrTLisjNy4CVshsw_file.jpeg": {
   "bbox": [
@@ -3290,17 +3096,8 @@
   "scores": []
  },
  "fIC040iRRf2BS2BFtXtxBnEg_file.jpeg": {
-  "bbox": [
-   [
-    1863,
-    1248,
-    2228,
-    1461
-   ]
-  ],
-  "scores": [
-   0.2926
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Jhun2vRoQbSR3BDpN2mdZg_file.jpeg": {
   "bbox": [],
@@ -3410,24 +3207,8 @@
   ]
  },
  "EgiKYMYVQYeE6mMO4cX1kg_file.jpeg": {
-  "bbox": [
-   [
-    1282,
-    1647,
-    2137,
-    1869
-   ],
-   [
-    1270,
-    1635,
-    2699,
-    1890
-   ]
-  ],
-  "scores": [
-   0.7265,
-   0.3231
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Xwx2xh50R2edUXYWarFq7A_file.jpeg": {
   "bbox": [
@@ -3714,24 +3495,8 @@
   ]
  },
  "AI8bij4IQ0erJSKYd1_yCg_file.jpeg": {
-  "bbox": [
-   [
-    375,
-    1070,
-    988,
-    1519
-   ],
-   [
-    303,
-    1581,
-    972,
-    2061
-   ]
-  ],
-  "scores": [
-   0.8489,
-   0.6771
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Ku_ZFI41T0GgeyzpiABcyA_file.jpeg": {
   "bbox": [
@@ -3904,17 +3669,8 @@
   ]
  },
  "e3sNRvq4Qbm94ckX_1xilQ_file.jpeg": {
-  "bbox": [
-   [
-    216,
-    1091,
-    378,
-    1545
-   ]
-  ],
-  "scores": [
-   0.3292
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Q1bAQgpDSuqQJ2yQ5dVlSQ_file.jpeg": {
   "bbox": [],
@@ -4098,17 +3854,8 @@
   ]
  },
  "OZ_CDyxBRJa2TsJZ2BGPxAQ_file.jpeg": {
-  "bbox": [
-   [
-    1423,
-    1763,
-    1843,
-    1890
-   ]
-  ],
-  "scores": [
-   0.604
-  ]
+  "bbox": [],
+  "scores": []
  },
  "jZ_qgogKRB6T9Jud3ah7NQ_file.jpeg": {
   "bbox": [],
@@ -4278,17 +4025,8 @@
   ]
  },
  "Pa9cWnAJQeqaOkZ2Po71AQ_file.jpeg": {
-  "bbox": [
-   [
-    1524,
-    654,
-    2658,
-    957
-   ]
-  ],
-  "scores": [
-   0.4266
-  ]
+  "bbox": [],
+  "scores": []
  },
  "sHj4U9nPSCSY2BlCfpkrdWQ_file.jpeg": {
   "bbox": [],
@@ -4409,17 +4147,8 @@
   ]
  },
  "u1ozlSdxQqydkm9rzYLazQ_file.jpeg": {
-  "bbox": [
-   [
-    1127,
-    1664,
-    3075,
-    2134
-   ]
-  ],
-  "scores": [
-   0.3459
-  ]
+  "bbox": [],
+  "scores": []
  },
  "_2EbAwUQSYSR_yV8CFkoFQ_file.jpeg": {
   "bbox": [
@@ -4538,17 +4267,8 @@
   ]
  },
  "ugx6q7MuQuygQ2BreOWiANA_file.jpeg": {
-  "bbox": [
-   [
-    256,
-    738,
-    452,
-    1293
-   ]
-  ],
-  "scores": [
-   0.5856
-  ]
+  "bbox": [],
+  "scores": []
  },
  "yaeSTJ4gSXifConwxRolhw_file.jpeg": {
   "bbox": [
@@ -4671,17 +4391,8 @@
   "scores": []
  },
  "bUnF0RBdTs64iXnjRumq_Q_file.jpeg": {
-  "bbox": [
-   [
-    216,
-    1476,
-    337,
-    1726
-   ]
-  ],
-  "scores": [
-   0.5036
-  ]
+  "bbox": [],
+  "scores": []
  },
  "ga3FiZdRSni82Bo8ZuV7amQ_file.jpeg": {
   "bbox": [],
@@ -4803,30 +4514,12 @@
   "scores": []
  },
  "Dfea3SqgRpatKK86uJIXkg_file.jpeg": {
-  "bbox": [
-   [
-    608,
-    2325,
-    1045,
-    2778
-   ]
-  ],
-  "scores": [
-   0.4905
-  ]
+  "bbox": [],
+  "scores": []
  },
  "tUxD_7orTWmO6vq08UH27Q_file.jpeg": {
-  "bbox": [
-   [
-    63,
-    711,
-    115,
-    799
-   ]
-  ],
-  "scores": [
-   0.3578
-  ]
+  "bbox": [],
+  "scores": []
  },
  "zPE9ayqURPKYm1gW8Yb0oQ_file.jpeg": {
   "bbox": [],
@@ -5082,24 +4775,8 @@
   ]
  },
  "HabfTzHlSx2JQgVuzjLKAw_file.jpeg": {
-  "bbox": [
-   [
-    1168,
-    1390,
-    1348,
-    1712
-   ],
-   [
-    1152,
-    1332,
-    1359,
-    1733
-   ]
-  ],
-  "scores": [
-   0.362,
-   0.2527
-  ]
+  "bbox": [],
+  "scores": []
  },
  "V2mJXnorQlmZvVfuH91l9w_file.jpeg": {
   "bbox": [],
@@ -5114,17 +4791,8 @@
   "scores": []
  },
  "IvM9CR7AR46EjWqcatorcQ_file.jpeg": {
-  "bbox": [
-   [
-    301,
-    972,
-    544,
-    1672
-   ]
-  ],
-  "scores": [
-   0.5284
-  ]
+  "bbox": [],
+  "scores": []
  },
  "s2Bi6in5gQya0ah4GS8TK5Q_file.jpeg": {
   "bbox": [],
@@ -5152,17 +4820,8 @@
   "scores": []
  },
  "pCTl1XOLQciE6Me3RLZOOA_file.jpeg": {
-  "bbox": [
-   [
-    2445,
-    1280,
-    2614,
-    1779
-   ]
-  ],
-  "scores": [
-   0.3606
-  ]
+  "bbox": [],
+  "scores": []
  },
  "zkgsbmguQ6ihBBhOriYxHQ_file.jpeg": {
   "bbox": [
@@ -5234,17 +4893,8 @@
   ]
  },
  "tlcaCDA7QzqKz6C5tuhRhg_file.jpeg": {
-  "bbox": [
-   [
-    3750,
-    1844,
-    3955,
-    2197
-   ]
-  ],
-  "scores": [
-   0.6787
-  ]
+  "bbox": [],
+  "scores": []
  },
  "r3Q50ippSg2oOrKwSSx8dg_file.jpeg": {
   "bbox": [],
@@ -5410,17 +5060,8 @@
   ]
  },
  "ba9ydtGpSx6cbXDQ7CvBLQ_file.jpeg": {
-  "bbox": [
-   [
-    2902,
-    456,
-    3089,
-    982
-   ]
-  ],
-  "scores": [
-   0.572
-  ]
+  "bbox": [],
+  "scores": []
  },
  "ZxrWyh7vTkSUb4fm5bMQWw_file.jpeg": {
   "bbox": [],
@@ -5584,17 +5225,8 @@
   "scores": []
  },
  "QivYA3xHQnOzPsJ77AJmYA_file.jpeg": {
-  "bbox": [
-   [
-    1092,
-    2801,
-    2804,
-    2999
-   ]
-  ],
-  "scores": [
-   0.6664
-  ]
+  "bbox": [],
+  "scores": []
  },
  "zt1LHMkfQBW8gJS1iwMJ7A_file.jpeg": {
   "bbox": [],
@@ -5725,17 +5357,8 @@
   "scores": []
  },
  "gJm89mn0SQi4kHTyPBiXRg_file.jpeg": {
-  "bbox": [
-   [
-    699,
-    459,
-    983,
-    527
-   ]
-  ],
-  "scores": [
-   0.644
-  ]
+  "bbox": [],
+  "scores": []
  },
  "FFR15PgsSRWRi_VymmYYDA_file.jpeg": {
   "bbox": [
@@ -5933,24 +5556,8 @@
   ]
  },
  "qjqTVi_2S2BeLb72B3HnmK2BQ_file.jpeg": {
-  "bbox": [
-   [
-    2665,
-    1172,
-    2875,
-    1683
-   ],
-   [
-    2636,
-    1090,
-    2890,
-    1698
-   ]
-  ],
-  "scores": [
-   0.4524,
-   0.3071
-  ]
+  "bbox": [],
+  "scores": []
  },
  "TKKJ9FDkS2GHbwAEmJI9Og_file.jpeg": {
   "bbox": [
@@ -6172,17 +5779,8 @@
   "scores": []
  },
  "krqmRL9CTmCLbZMyzF_83Q_file.jpeg": {
-  "bbox": [
-   [
-    2211,
-    926,
-    2782,
-    1289
-   ]
-  ],
-  "scores": [
-   0.6958
-  ]
+  "bbox": [],
+  "scores": []
  },
  "eX9I7IGlQuSAqlyaCTULIg_file.jpeg": {
   "bbox": [
@@ -6292,17 +5890,8 @@
   "scores": []
  },
  "wWwh3eo2QfC8AJczGRs9Mg_file.jpeg": {
-  "bbox": [
-   [
-    142,
-    1008,
-    403,
-    1611
-   ]
-  ],
-  "scores": [
-   0.2915
-  ]
+  "bbox": [],
+  "scores": []
  },
  "YpE63qJzS46NGCO6mNV0dA_file.jpeg": {
   "bbox": [],
@@ -6403,30 +5992,12 @@
   ]
  },
  "qyi5CnUQSouZX80dNJMKKQ_file.jpeg": {
-  "bbox": [
-   [
-    2316,
-    1683,
-    2455,
-    1977
-   ]
-  ],
-  "scores": [
-   0.4935
-  ]
+  "bbox": [],
+  "scores": []
  },
  "6gNUMJD8RDixZQT8YP6C0A_file.jpeg": {
-  "bbox": [
-   [
-    369,
-    930,
-    541,
-    1473
-   ]
-  ],
-  "scores": [
-   0.4263
-  ]
+  "bbox": [],
+  "scores": []
  },
  "F9o0XSteR_iQRy5p3WNmZQ_file.jpeg": {
   "bbox": [],
@@ -6682,17 +6253,8 @@
   ]
  },
  "DuTw97KaQF2YknUuMwczRA_file.jpeg": {
-  "bbox": [
-   [
-    1687,
-    1533,
-    2088,
-    1612
-   ]
-  ],
-  "scores": [
-   0.268
-  ]
+  "bbox": [],
+  "scores": []
  },
  "xhHhaZJ6TLqE7eMZACC2Bvw_file.jpeg": {
   "bbox": [
@@ -7007,17 +6569,8 @@
   ]
  },
  "q1hB2B7HpTNOz2ZwXWq2OhA_file.jpeg": {
-  "bbox": [
-   [
-    2932,
-    1229,
-    3379,
-    1549
-   ]
-  ],
-  "scores": [
-   0.6851
-  ]
+  "bbox": [],
+  "scores": []
  },
  "dJUjTgBtR12BTV6MGW_ciJQ_file.jpeg": {
   "bbox": [],
@@ -7037,17 +6590,8 @@
   ]
  },
  "2BtpgNbkHTDevfS20gvTUOA_file.jpeg": {
-  "bbox": [
-   [
-    384,
-    1405,
-    492,
-    1632
-   ]
-  ],
-  "scores": [
-   0.4764
-  ]
+  "bbox": [],
+  "scores": []
  },
  "9DfdNeygRFmBJ6ai_RL5oQ_file.jpeg": {
   "bbox": [
@@ -7123,17 +6667,8 @@
   "scores": []
  },
  "w4LSlBw7TEGDzI9dtxEhMA_file.jpeg": {
-  "bbox": [
-   [
-    118,
-    646,
-    247,
-    825
-   ]
-  ],
-  "scores": [
-   0.6683
-  ]
+  "bbox": [],
+  "scores": []
  },
  "oA6xK5mTR8uJpl4e8TgXJQ_file.jpeg": {
   "bbox": [],
@@ -7493,17 +7028,8 @@
   ]
  },
  "qWUg9eWyRpafD9hEjaMC9w_file.jpeg": {
-  "bbox": [
-   [
-    1645,
-    1715,
-    1879,
-    1779
-   ]
-  ],
-  "scores": [
-   0.5752
-  ]
+  "bbox": [],
+  "scores": []
  },
  "dcba7OGqQfyXeXWGJVZIJg_file.jpeg": {
   "bbox": [
@@ -7635,17 +7161,8 @@
   ]
  },
  "uci9d5V7T_qbwq9OeSIp_g_file.jpeg": {
-  "bbox": [
-   [
-    1161,
-    1988,
-    1934,
-    2119
-   ]
-  ],
-  "scores": [
-   0.613
-  ]
+  "bbox": [],
+  "scores": []
  },
  "ucMsdSXHT5aQPsnhqpsxgg_file.jpeg": {
   "bbox": [],
@@ -7665,17 +7182,8 @@
   ]
  },
  "RKLVcJN2BS5iJkzwndb0JRA_file.jpeg": {
-  "bbox": [
-   [
-    1837,
-    1049,
-    2710,
-    1168
-   ]
-  ],
-  "scores": [
-   0.505
-  ]
+  "bbox": [],
+  "scores": []
  },
  "4AUqwDPMR8KmDjzmx1TFnw_file.jpeg": {
   "bbox": [
@@ -7704,17 +7212,8 @@
   ]
  },
  "ZmMmI5gfS7aHRU_5haiDsw_file.jpeg": {
-  "bbox": [
-   [
-    977,
-    2079,
-    2616,
-    2343
-   ]
-  ],
-  "scores": [
-   0.6956
-  ]
+  "bbox": [],
+  "scores": []
  },
  "9F2iGkElRgqPH_oSRDmCqQ_file.jpeg": {
   "bbox": [
@@ -8091,17 +7590,8 @@
   "scores": []
  },
  "fbnWKK3hQsanXd3vOwjm9Q_file.jpeg": {
-  "bbox": [
-   [
-    1660,
-    1087,
-    2125,
-    1381
-   ]
-  ],
-  "scores": [
-   0.6297
-  ]
+  "bbox": [],
+  "scores": []
  },
  "iAcJyYdTTKm1Ef2BC_bHSzQ_file.jpeg": {
   "bbox": [
@@ -8378,24 +7868,8 @@
   ]
  },
  "bhkvoFnvT8eZUSzCYSNrsQ_file.jpeg": {
-  "bbox": [
-   [
-    0,
-    0,
-    288,
-    231
-   ],
-   [
-    1162,
-    590,
-    1272,
-    760
-   ]
-  ],
-  "scores": [
-   0.5408,
-   0.4283
-  ]
+  "bbox": [],
+  "scores": []
  },
  "HlaiRS3UT6yO5YoNwahHCw_file.jpeg": {
   "bbox": [
@@ -8727,17 +8201,8 @@
   ]
  },
  "2G8_p4ARTdm4bV8tOiCGJA_file.jpeg": {
-  "bbox": [
-   [
-    673,
-    1659,
-    942,
-    2245
-   ]
-  ],
-  "scores": [
-   0.5499
-  ]
+  "bbox": [],
+  "scores": []
  },
  "sXPEeI0jQ2BqcfMwYqoLSXw_file.jpeg": {
   "bbox": [],
@@ -8765,24 +8230,8 @@
   "scores": []
  },
  "rXLg6mFEQNuq3mOhVAi6yQ_file.jpeg": {
-  "bbox": [
-   [
-    587,
-    1079,
-    835,
-    1384
-   ],
-   [
-    871,
-    364,
-    987,
-    611
-   ]
-  ],
-  "scores": [
-   0.7172,
-   0.2801
-  ]
+  "bbox": [],
+  "scores": []
  },
  "3gf5s2B5WTmajTlSBoj8t7w_file.jpeg": {
   "bbox": [
@@ -9002,17 +8451,8 @@
   "scores": []
  },
  "kJYSP2Bt0SN6DJbbnEtPegw_file.jpeg": {
-  "bbox": [
-   [
-    1149,
-    525,
-    1989,
-    1078
-   ]
-  ],
-  "scores": [
-   0.649
-  ]
+  "bbox": [],
+  "scores": []
  },
  "IUwRPDwLSHWfHMklOolrCw_file.jpeg": {
   "bbox": [],
@@ -9273,17 +8713,8 @@
   ]
  },
  "cFMtL7iOS0esDseP9eacIg_file.jpeg": {
-  "bbox": [
-   [
-    272,
-    827,
-    487,
-    1322
-   ]
-  ],
-  "scores": [
-   0.297
-  ]
+  "bbox": [],
+  "scores": []
  },
  "x7tPTXBKQ9i88tc7djdcOw_file.jpeg": {
   "bbox": [
@@ -9355,17 +8786,8 @@
   "scores": []
  },
  "jrpxRNDCRWCpUWjUqZIbng_file.jpeg": {
-  "bbox": [
-   [
-    1991,
-    882,
-    2106,
-    1000
-   ]
-  ],
-  "scores": [
-   0.4395
-  ]
+  "bbox": [],
+  "scores": []
  },
  "biKzLXqTTyGQkhjnJgQM5w_file.jpeg": {
   "bbox": [
@@ -9512,17 +8934,8 @@
   ]
  },
  "8rq7X8OeQlCv4o4QZg7gew_file.jpeg": {
-  "bbox": [
-   [
-    1150,
-    2256,
-    1495,
-    2409
-   ]
-  ],
-  "scores": [
-   0.3688
-  ]
+  "bbox": [],
+  "scores": []
  },
  "qTDon2ByNT6aCFOSgVzM2xA_file.jpeg": {
   "bbox": [
@@ -9538,17 +8951,8 @@
   ]
  },
  "5aRvqrGHSBarijATUmyAdQ_file.jpeg": {
-  "bbox": [
-   [
-    487,
-    827,
-    730,
-    893
-   ]
-  ],
-  "scores": [
-   0.6792
-  ]
+  "bbox": [],
+  "scores": []
  },
  "A0ORYDKTQsurQSiR2BCRzxg_file.jpeg": {
   "bbox": [
@@ -9846,24 +9250,8 @@
   "scores": []
  },
  "_3ZjNz9DRf6AnQn_eBP0Hw_file.jpeg": {
-  "bbox": [
-   [
-    3918,
-    1000,
-    4080,
-    1606
-   ],
-   [
-    3865,
-    942,
-    4080,
-    1614
-   ]
-  ],
-  "scores": [
-   0.6157,
-   0.3283
-  ]
+  "bbox": [],
+  "scores": []
  },
  "NMgDW2c4SlS_pE3MX0RJug_file.jpeg": {
   "bbox": [
@@ -10025,17 +9413,8 @@
   ]
  },
  "ug0RbJVdTo6MThAzP87dgA_file.jpeg": {
-  "bbox": [
-   [
-    1472,
-    762,
-    2503,
-    1441
-   ]
-  ],
-  "scores": [
-   0.5849
-  ]
+  "bbox": [],
+  "scores": []
  },
  "EBBTPKTTSMu26qyTe4xwGA_file.jpeg": {
   "bbox": [
@@ -10072,24 +9451,8 @@
   "scores": []
  },
  "QSWA0rALSRiRa8lmaNXGIg_file.jpeg": {
-  "bbox": [
-   [
-    2996,
-    977,
-    3169,
-    1486
-   ],
-   [
-    2948,
-    941,
-    3180,
-    1498
-   ]
-  ],
-  "scores": [
-   0.4712,
-   0.2695
-  ]
+  "bbox": [],
+  "scores": []
  },
  "oQEzuNrETFyf1uX580YhUw_file.jpeg": {
   "bbox": [
@@ -10194,17 +9557,8 @@
   "scores": []
  },
  "6qtGXTEQTmm4I1Bed2VYkg_file.jpeg": {
-  "bbox": [
-   [
-    1922,
-    1214,
-    2014,
-    1343
-   ]
-  ],
-  "scores": [
-   0.2658
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Rhxq2w3HR2B2dzi3L7bjggw_file.jpeg": {
   "bbox": [
@@ -10292,24 +9646,8 @@
   "scores": []
  },
  "Z24L5f0gQp2XG0q2Bya55HQ_file.jpeg": {
-  "bbox": [
-   [
-    1127,
-    1825,
-    1856,
-    1986
-   ],
-   [
-    3116,
-    806,
-    3200,
-    886
-   ]
-  ],
-  "scores": [
-   0.8821,
-   0.4949
-  ]
+  "bbox": [],
+  "scores": []
  },
  "d6IaQ_86ToyGE8s42eHztw_file.jpeg": {
   "bbox": [
@@ -10325,17 +9663,8 @@
   ]
  },
  "SZxwoAxWRzeanhGpf6LjiA_file.jpeg": {
-  "bbox": [
-   [
-    994,
-    1668,
-    1169,
-    1745
-   ]
-  ],
-  "scores": [
-   0.3387
-  ]
+  "bbox": [],
+  "scores": []
  },
  "ZZTjGIZoQIWi2_0b3cf59w_file.jpeg": {
   "bbox": [],
@@ -10420,17 +9749,8 @@
   ]
  },
  "7jjiFzjjRYyGtfp54FWeRw_file.jpeg": {
-  "bbox": [
-   [
-    2829,
-    15,
-    3263,
-    1032
-   ]
-  ],
-  "scores": [
-   0.6
-  ]
+  "bbox": [],
+  "scores": []
  },
  "nm5X8q33RfqqstZuOcrHfQ_file.jpeg": {
   "bbox": [],
@@ -10814,17 +10134,8 @@
   ]
  },
  "6acQSMZwTCGFWCr1jCzRSw_file.jpeg": {
-  "bbox": [
-   [
-    1215,
-    815,
-    1699,
-    1129
-   ]
-  ],
-  "scores": [
-   0.4264
-  ]
+  "bbox": [],
+  "scores": []
  },
  "BZZX7i0TQqCKm9FlrKrprA_file.jpeg": {
   "bbox": [
@@ -10882,17 +10193,8 @@
   ]
  },
  "_q1nU5luQp6Yyto_x9OoJg_file.jpeg": {
-  "bbox": [
-   [
-    1,
-    1433,
-    473,
-    2031
-   ]
-  ],
-  "scores": [
-   0.3807
-  ]
+  "bbox": [],
+  "scores": []
  },
  "joPis2VdTSi7cyOZIJ3n3A_file.jpeg": {
   "bbox": [
@@ -10934,17 +10236,8 @@
   ]
  },
  "JfEYu0oFQBqdRuxlDJHUEw_file.jpeg": {
-  "bbox": [
-   [
-    422,
-    1168,
-    607,
-    1563
-   ]
-  ],
-  "scores": [
-   0.6877
-  ]
+  "bbox": [],
+  "scores": []
  },
  "yW_l08huR3COcZEnZxci6A_file.jpeg": {
   "bbox": [
@@ -11113,30 +10406,12 @@
   ]
  },
  "lnt1HcapTd2B_60vJd5NELw_file.jpeg": {
-  "bbox": [
-   [
-    3065,
-    1186,
-    3256,
-    1685
-   ]
-  ],
-  "scores": [
-   0.63
-  ]
+  "bbox": [],
+  "scores": []
  },
  "tDDYKU7ATj23azSvcGlocw_file.jpeg": {
-  "bbox": [
-   [
-    1755,
-    913,
-    2142,
-    1186
-   ]
-  ],
-  "scores": [
-   0.4566
-  ]
+  "bbox": [],
+  "scores": []
  },
  "gHjd_vRtSLSg8QKjckK3iA_file.jpeg": {
   "bbox": [
@@ -11165,31 +10440,8 @@
   ]
  },
  "K4EPeYkuRz2tflm1qip_nA_file.jpeg": {
-  "bbox": [
-   [
-    176,
-    890,
-    3633,
-    1940
-   ],
-   [
-    1868,
-    894,
-    3583,
-    1924
-   ],
-   [
-    257,
-    913,
-    1964,
-    1682
-   ]
-  ],
-  "scores": [
-   0.7705,
-   0.3529,
-   0.3026
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Roe0b5gdS3ijkMgj9d8ZZw_file.jpeg": {
   "bbox": [
@@ -11287,17 +10539,8 @@
   ]
  },
  "H1rHQ1bWQXGhYpyWWMlO5g_file.jpeg": {
-  "bbox": [
-   [
-    2111,
-    1079,
-    2943,
-    1731
-   ]
-  ],
-  "scores": [
-   0.6496
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Ai9XuldRRYq4hVEgou_MxQ_file.jpeg": {
   "bbox": [
@@ -11449,17 +10692,8 @@
   "scores": []
  },
  "WcHw_QX4RhqiPOC1dYN5NQ_file.jpeg": {
-  "bbox": [
-   [
-    3261,
-    1127,
-    3569,
-    1495
-   ]
-  ],
-  "scores": [
-   0.6301
-  ]
+  "bbox": [],
+  "scores": []
  },
  "sCc6X5z3QAqM0WRiQnrnRg_file.jpeg": {
   "bbox": [],
@@ -11474,17 +10708,8 @@
   "scores": []
  },
  "riz9aa5LTfqDpm9qEJ16Ng_file.jpeg": {
-  "bbox": [
-   [
-    1263,
-    745,
-    2072,
-    904
-   ]
-  ],
-  "scores": [
-   0.3345
-  ]
+  "bbox": [],
+  "scores": []
  },
  "qLJVf8zFTbiSPW6DpvifTQ_file.jpeg": {
   "bbox": [
@@ -11521,17 +10746,8 @@
   ]
  },
  "2aLK0wo3RSqVXq_usysL0A_file.jpeg": {
-  "bbox": [
-   [
-    1322,
-    2149,
-    2275,
-    2289
-   ]
-  ],
-  "scores": [
-   0.2611
-  ]
+  "bbox": [],
+  "scores": []
  },
  "a1ZRmoFBRlOfnUhAUkXDPg_file.jpeg": {
   "bbox": [],
@@ -11667,17 +10883,8 @@
   ]
  },
  "VJlq2BbyzRvWOCf9ylj2B1CQ_file.jpeg": {
-  "bbox": [
-   [
-    3564,
-    1073,
-    3784,
-    1552
-   ]
-  ],
-  "scores": [
-   0.574
-  ]
+  "bbox": [],
+  "scores": []
  },
  "xTbn0ZhUQkCD7FnDaQpCdw_file.jpeg": {
   "bbox": [
@@ -11727,17 +10934,8 @@
   ]
  },
  "Y1nSNnBPRfiHeQVlEnA82Bg_file.jpeg": {
-  "bbox": [
-   [
-    1677,
-    379,
-    2442,
-    989
-   ]
-  ],
-  "scores": [
-   0.3751
-  ]
+  "bbox": [],
+  "scores": []
  },
  "trzIFgWHS2GJeB8jgvTxRQ_file.jpeg": {
   "bbox": [],
@@ -12018,17 +11216,8 @@
   ]
  },
  "TK_d2qbASH22BJf1kff5Fsg_file.jpeg": {
-  "bbox": [
-   [
-    519,
-    1585,
-    635,
-    1895
-   ]
-  ],
-  "scores": [
-   0.3431
-  ]
+  "bbox": [],
+  "scores": []
  },
  "tKb9bKkhRRezcsO2B0swbGg_file.jpeg": {
   "bbox": [
@@ -12044,30 +11233,12 @@
   ]
  },
  "2B5MWNRuwTfeo0EZR0vH15w_file.jpeg": {
-  "bbox": [
-   [
-    1368,
-    952,
-    1571,
-    1188
-   ]
-  ],
-  "scores": [
-   0.6674
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Z2M5W43XRrmGJPiv83Oieg_file.jpeg": {
-  "bbox": [
-   [
-    543,
-    1438,
-    788,
-    1890
-   ]
-  ],
-  "scores": [
-   0.5295
-  ]
+  "bbox": [],
+  "scores": []
  },
  "SmQy2ZBkSMiYcV4mr325Ug_file.jpeg": {
   "bbox": [
@@ -12306,17 +11477,8 @@
   ]
  },
  "tJD_6SdDRjGwRIDgH1fhXw_file.jpeg": {
-  "bbox": [
-   [
-    448,
-    998,
-    612,
-    1363
-   ]
-  ],
-  "scores": [
-   0.5686
-  ]
+  "bbox": [],
+  "scores": []
  },
  "QGyBOvxESmi5uTA8CfbJHA_file.jpeg": {
   "bbox": [
@@ -12721,17 +11883,8 @@
   ]
  },
  "oDfJSWIDQ_SQjhIcPAhvXA_file.jpeg": {
-  "bbox": [
-   [
-    357,
-    984,
-    544,
-    1373
-   ]
-  ],
-  "scores": [
-   0.6458
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Vy1WNPTGTuOwgDPmmOzBNg_file.jpeg": {
   "bbox": [],
@@ -12802,17 +11955,8 @@
   ]
  },
  "BmHIoSYaT52BDNUKwR02BApQ_file.jpeg": {
-  "bbox": [
-   [
-    245,
-    1134,
-    468,
-    1758
-   ]
-  ],
-  "scores": [
-   0.4744
-  ]
+  "bbox": [],
+  "scores": []
  },
  "mW8_ijSxRoij0Zl3yCsn_A_file.jpeg": {
   "bbox": [],
@@ -12913,17 +12057,8 @@
   ]
  },
  "LO9ZhL5fRBO3umfl2PjYGA_file.jpeg": {
-  "bbox": [
-   [
-    591,
-    316,
-    2617,
-    810
-   ]
-  ],
-  "scores": [
-   0.6908
-  ]
+  "bbox": [],
+  "scores": []
  },
  "yv1z7zbvQzKAtZ8CNJcBpA_file.jpeg": {
   "bbox": [
@@ -12995,17 +12130,8 @@
   ]
  },
  "CWHuKNcJRo6g2B4dPua7K7A_file.jpeg": {
-  "bbox": [
-   [
-    1651,
-    1420,
-    1995,
-    1497
-   ]
-  ],
-  "scores": [
-   0.337
-  ]
+  "bbox": [],
+  "scores": []
  },
  "EuxjDut4RDKgOm8VhytYeg_file.jpeg": {
   "bbox": [
@@ -13064,24 +12190,8 @@
   ]
  },
  "4VXtNxG9TMqsCiifR2BJkKQ_file.jpeg": {
-  "bbox": [
-   [
-    1832,
-    1702,
-    2283,
-    1819
-   ],
-   [
-    3923,
-    2092,
-    4119,
-    2325
-   ]
-  ],
-  "scores": [
-   0.7013,
-   0.4604
-  ]
+  "bbox": [],
+  "scores": []
  },
  "sDk6UpsZRkePRVXpNZv7qw_file.jpeg": {
   "bbox": [],
@@ -13242,17 +12352,8 @@
   ]
  },
  "jZabfiOGQBGcVThtd1ZksA_file.jpeg": {
-  "bbox": [
-   [
-    1324,
-    1103,
-    1639,
-    1241
-   ]
-  ],
-  "scores": [
-   0.3211
-  ]
+  "bbox": [],
+  "scores": []
  },
  "GpbuH17TRWqCFYgI31laWw_file.jpeg": {
   "bbox": [
@@ -13393,17 +12494,8 @@
   ]
  },
  "urvYPYFsRGWlYcHGoy2BRRQ_file.jpeg": {
-  "bbox": [
-   [
-    1030,
-    2141,
-    1388,
-    2492
-   ]
-  ],
-  "scores": [
-   0.4625
-  ]
+  "bbox": [],
+  "scores": []
  },
  "92BLhL0tATAqDzj6Vg7sirQ_file.jpeg": {
   "bbox": [
@@ -13432,17 +12524,8 @@
   ]
  },
  "HjTX6nJtTreaA1kM1vP0jw_file.jpeg": {
-  "bbox": [
-   [
-    2997,
-    904,
-    3166,
-    1441
-   ]
-  ],
-  "scores": [
-   0.3
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Y3j8mevNSFeMPECcSAbUUw_file.jpeg": {
   "bbox": [],
@@ -13583,17 +12666,8 @@
   ]
  },
  "XLDTC0RfTB2UQuoq7hsvRw_file.jpeg": {
-  "bbox": [
-   [
-    3114,
-    1601,
-    3340,
-    2143
-   ]
-  ],
-  "scores": [
-   0.6422
-  ]
+  "bbox": [],
+  "scores": []
  },
  "jJgBeoqfQNqXHTqU6QuiKw_file.jpeg": {
   "bbox": [],
@@ -13809,17 +12883,8 @@
   "scores": []
  },
  "ELr6TUoeRqSff4WheR53PQ_file.jpeg": {
-  "bbox": [
-   [
-    3157,
-    1217,
-    3474,
-    1607
-   ]
-  ],
-  "scores": [
-   0.5176
-  ]
+  "bbox": [],
+  "scores": []
  },
  "IjnDsaXoQ7uQa4L7RT12BeQ_file.jpeg": {
   "bbox": [
@@ -13878,30 +12943,12 @@
   "scores": []
  },
  "hLG564nuRBGig2Y22B9iwQ_file.jpeg": {
-  "bbox": [
-   [
-    506,
-    1126,
-    773,
-    1578
-   ]
-  ],
-  "scores": [
-   0.6837
-  ]
+  "bbox": [],
+  "scores": []
  },
  "uqJSIowZS82F7bQitg8Etw_file.jpeg": {
-  "bbox": [
-   [
-    140,
-    600,
-    464,
-    753
-   ]
-  ],
-  "scores": [
-   0.4798
-  ]
+  "bbox": [],
+  "scores": []
  },
  "OiL7tATDSsKSkBw7WlE2B2A_file.jpeg": {
   "bbox": [
@@ -13947,17 +12994,8 @@
   ]
  },
  "nBGIZEdvRce4EhDuuW9lOQ_file.jpeg": {
-  "bbox": [
-   [
-    1508,
-    2176,
-    1828,
-    2287
-   ]
-  ],
-  "scores": [
-   0.6684
-  ]
+  "bbox": [],
+  "scores": []
  },
  "oOSejQu8SoiXy522BpKspyQ_file.jpeg": {
   "bbox": [],
@@ -14037,31 +13075,8 @@
   ]
  },
  "kkRwnQx6T8Ky0iEZWtNwDA_file.jpeg": {
-  "bbox": [
-   [
-    3110,
-    1541,
-    3302,
-    1819
-   ],
-   [
-    3107,
-    1532,
-    3401,
-    1827
-   ],
-   [
-    3104,
-    1529,
-    3529,
-    1838
-   ]
-  ],
-  "scores": [
-   0.6997,
-   0.3954,
-   0.3085
-  ]
+  "bbox": [],
+  "scores": []
  },
  "C_mkmKHOS2BevF_umpykqMQ_file.jpeg": {
   "bbox": [],
@@ -14227,17 +13242,8 @@
   ]
  },
  "OmJiDhufRpqdUxly3wyYNw_file.jpeg": {
-  "bbox": [
-   [
-    1562,
-    1755,
-    1735,
-    1837
-   ]
-  ],
-  "scores": [
-   0.2675
-  ]
+  "bbox": [],
+  "scores": []
  },
  "qDGz4EiJTTuXqiukDe3jBQ_file.jpeg": {
   "bbox": [
@@ -14544,17 +13550,8 @@
   ]
  },
  "4opA0d0MRS6E1Wpay1NsFQ_file.jpeg": {
-  "bbox": [
-   [
-    566,
-    2163,
-    2559,
-    2448
-   ]
-  ],
-  "scores": [
-   0.4009
-  ]
+  "bbox": [],
+  "scores": []
  },
  "3AAy943JQimdNr3Un9wFuA_file.jpeg": {
   "bbox": [
@@ -14609,17 +13606,8 @@
   ]
  },
  "7EPoaf0fRzOPGSuEoS3WSg_file.jpeg": {
-  "bbox": [
-   [
-    1407,
-    1343,
-    1516,
-    1461
-   ]
-  ],
-  "scores": [
-   0.2894
-  ]
+  "bbox": [],
+  "scores": []
  },
  "ascbCSzJRfKhI9oEQHjdOA_file.jpeg": {
   "bbox": [
@@ -14635,31 +13623,8 @@
   ]
  },
  "R6Cnv7ukRea14yXGskYFYQ_file.jpeg": {
-  "bbox": [
-   [
-    1,
-    0,
-    253,
-    416
-   ],
-   [
-    1196,
-    2456,
-    2916,
-    2680
-   ],
-   [
-    1867,
-    1699,
-    2239,
-    1836
-   ]
-  ],
-  "scores": [
-   0.7581,
-   0.6924,
-   0.341
-  ]
+  "bbox": [],
+  "scores": []
  },
  "UUx2VZB3QQyRF60zj4nTzw_file.jpeg": {
   "bbox": [
@@ -15554,17 +14519,8 @@
   ]
  },
  "zXEGmZuESiePa2KPhM2xGA_file.jpeg": {
-  "bbox": [
-   [
-    1490,
-    910,
-    2325,
-    1496
-   ]
-  ],
-  "scores": [
-   0.3153
-  ]
+  "bbox": [],
+  "scores": []
  },
  "RZ3upKL1QKm7OO8EjGFv7w_file.jpeg": {
   "bbox": [],
@@ -15601,37 +14557,12 @@
   "scores": []
  },
  "G79To_YSSQ2BCSj_ykAP2BlQ_file.jpeg": {
-  "bbox": [
-   [
-    1303,
-    994,
-    1563,
-    1261
-   ]
-  ],
-  "scores": [
-   0.6728
-  ]
+  "bbox": [],
+  "scores": []
  },
  "g5YYuHbuRBi28GpgGeR5pw_file.jpeg": {
-  "bbox": [
-   [
-    1011,
-    2349,
-    2367,
-    2446
-   ],
-   [
-    1007,
-    2310,
-    2367,
-    2444
-   ]
-  ],
-  "scores": [
-   0.5477,
-   0.2786
-  ]
+  "bbox": [],
+  "scores": []
  },
  "KZ7P632bTlWMgvV2Br4zbMQ_file.jpeg": {
   "bbox": [
@@ -15711,24 +14642,8 @@
   "scores": []
  },
  "6T_sFC0eTK6H9ukYwWbwXQ_file.jpeg": {
-  "bbox": [
-   [
-    2689,
-    2087,
-    3194,
-    2538
-   ],
-   [
-    2168,
-    287,
-    2526,
-    687
-   ]
-  ],
-  "scores": [
-   0.837,
-   0.3488
-  ]
+  "bbox": [],
+  "scores": []
  },
  "XxTgvLhVTXa32BOVvOscs8w_file.jpeg": {
   "bbox": [],
@@ -15769,37 +14684,12 @@
   ]
  },
  "RxRz9NRlT7iNvvsVTeZyDw_file.jpeg": {
-  "bbox": [
-   [
-    567,
-    1305,
-    803,
-    1778
-   ],
-   [
-    615,
-    1342,
-    790,
-    1764
-   ]
-  ],
-  "scores": [
-   0.5839,
-   0.3914
-  ]
+  "bbox": [],
+  "scores": []
  },
  "uQLn2BfVsQQqKYpMzFxbABg_file.jpeg": {
-  "bbox": [
-   [
-    634,
-    1281,
-    896,
-    1684
-   ]
-  ],
-  "scores": [
-   0.5446
-  ]
+  "bbox": [],
+  "scores": []
  },
  "4kUJ9fX2TQ6kzE64NXXPqQ_file.jpeg": {
   "bbox": [
@@ -16057,17 +14947,8 @@
   ]
  },
  "tXZkvFUEQ3OdIQipo4p8Rg_file.jpeg": {
-  "bbox": [
-   [
-    3747,
-    1701,
-    4174,
-    2278
-   ]
-  ],
-  "scores": [
-   0.6593
-  ]
+  "bbox": [],
+  "scores": []
  },
  "4IvV_JPeSQGrKDz5UouR1Q_file.jpeg": {
   "bbox": [
@@ -16104,17 +14985,8 @@
   "scores": []
  },
  "MMCx3ZT_QWOoz87SQV6usA_file.jpeg": {
-  "bbox": [
-   [
-    1348,
-    1683,
-    2792,
-    2009
-   ]
-  ],
-  "scores": [
-   0.3799
-  ]
+  "bbox": [],
+  "scores": []
  },
  "6y02Bi1wUQ4CXt3y2BUlEg7A_file.jpeg": {
   "bbox": [
@@ -16313,24 +15185,8 @@
   "scores": []
  },
  "fmiE7nvTSXKZFxdXaoQu6A_file.jpeg": {
-  "bbox": [
-   [
-    1026,
-    1210,
-    1376,
-    1466
-   ],
-   [
-    0,
-    1151,
-    87,
-    1386
-   ]
-  ],
-  "scores": [
-   0.8934,
-   0.2874
-  ]
+  "bbox": [],
+  "scores": []
  },
  "2BmpkNjJiTx2BAIGkvN8Erlg_file.jpeg": {
   "bbox": [
@@ -16423,17 +15279,8 @@
   "scores": []
  },
  "vNRqNmbFQmS5KymMfhat1g_file.jpeg": {
-  "bbox": [
-   [
-    3542,
-    1199,
-    3808,
-    1809
-   ]
-  ],
-  "scores": [
-   0.6827
-  ]
+  "bbox": [],
+  "scores": []
  },
  "pm93BJDxScSIEq81qshRhw_file.jpeg": {
   "bbox": [
@@ -16522,30 +15369,12 @@
   ]
  },
  "k62Balu1TSSKupg9P4mm9bA_file.jpeg": {
-  "bbox": [
-   [
-    701,
-    1052,
-    3398,
-    1989
-   ]
-  ],
-  "scores": [
-   0.2555
-  ]
+  "bbox": [],
+  "scores": []
  },
  "_zb4t_yDSsaq8FqtShP_Yw_file.jpeg": {
-  "bbox": [
-   [
-    1493,
-    863,
-    2297,
-    1173
-   ]
-  ],
-  "scores": [
-   0.3726
-  ]
+  "bbox": [],
+  "scores": []
  },
  "XkniZcUSRZeYGqsQYHhFOw_file.jpeg": {
   "bbox": [],
@@ -16556,30 +15385,12 @@
   "scores": []
  },
  "XBBCFvQQRSWxjIcTz6R7HA_file.jpeg": {
-  "bbox": [
-   [
-    539,
-    1644,
-    1838,
-    1842
-   ]
-  ],
-  "scores": [
-   0.3177
-  ]
+  "bbox": [],
+  "scores": []
  },
  "ug8RYAhIRcGMbiG2bSjB9A_file.jpeg": {
-  "bbox": [
-   [
-    1421,
-    2191,
-    1593,
-    2276
-   ]
-  ],
-  "scores": [
-   0.2639
-  ]
+  "bbox": [],
+  "scores": []
  },
  "AkqPuMGESCObbOMRBxi8WQ_file.jpeg": {
   "bbox": [],
@@ -16650,17 +15461,8 @@
   ]
  },
  "2BBRcPPSFTCKYm6ss2Bx1qQg_file.jpeg": {
-  "bbox": [
-   [
-    1229,
-    875,
-    1920,
-    996
-   ]
-  ],
-  "scores": [
-   0.4826
-  ]
+  "bbox": [],
+  "scores": []
  },
  "dGaoQpmTQUy8WYT0z21t3A_file.jpeg": {
   "bbox": [
@@ -16689,17 +15491,8 @@
   ]
  },
  "_AfOZDmwQBWI_sTaAJAfQA_file.jpeg": {
-  "bbox": [
-   [
-    754,
-    2375,
-    1243,
-    2892
-   ]
-  ],
-  "scores": [
-   0.6208
-  ]
+  "bbox": [],
+  "scores": []
  },
  "83Uh1FWHRMSg1l3x4BI3RA_file.jpeg": {
   "bbox": [],
@@ -16864,17 +15657,8 @@
   ]
  },
  "grkCzzQdTz2ebPYzqWuubQ_file.jpeg": {
-  "bbox": [
-   [
-    284,
-    1332,
-    438,
-    1668
-   ]
-  ],
-  "scores": [
-   0.4756
-  ]
+  "bbox": [],
+  "scores": []
  },
  "ftwPIObXSNejgKJ6F81Tjw_file.jpeg": {
   "bbox": [
@@ -16890,34 +15674,16 @@
   ]
  },
  "Pe1l8tqvSouY407eaozOfA_file.jpeg": {
-  "bbox": [
-   [
-    519,
-    861,
-    595,
-    895
-   ]
-  ],
-  "scores": [
-   0.3731
-  ]
+  "bbox": [],
+  "scores": []
  },
  "j5naT1FGQ22FqgX7HaOnsw_file.jpeg": {
   "bbox": [],
   "scores": []
  },
  "rSx04hpNS7K3sE9qU0GxMg_file.jpeg": {
-  "bbox": [
-   [
-    3299,
-    1282,
-    3569,
-    1918
-   ]
-  ],
-  "scores": [
-   0.4979
-  ]
+  "bbox": [],
+  "scores": []
  },
  "1ADoOkU2BSFWrrBRwSpcx3A_file.jpeg": {
   "bbox": [
@@ -17568,17 +16334,8 @@
   "scores": []
  },
  "3La_m9Z_RQWZcqwgV_88Lw_file.jpeg": {
-  "bbox": [
-   [
-    1402,
-    1373,
-    2725,
-    1755
-   ]
-  ],
-  "scores": [
-   0.4497
-  ]
+  "bbox": [],
+  "scores": []
  },
  "DyhuWjaSRAqYI32B2BY9Rzfg_file.jpeg": {
   "bbox": [
@@ -18044,17 +16801,8 @@
   ]
  },
  "Ol55h7V6QdWHnX2457vp9w_file.jpeg": {
-  "bbox": [
-   [
-    3003,
-    1185,
-    3264,
-    1536
-   ]
-  ],
-  "scores": [
-   0.6635
-  ]
+  "bbox": [],
+  "scores": []
  },
  "wno2HKx4SYm2BcIiKJHPZLw_file.jpeg": {
   "bbox": [],
@@ -18095,17 +16843,8 @@
   ]
  },
  "3Fd7dz_YSfGY2T1U7Vji5w_file.jpeg": {
-  "bbox": [
-   [
-    1143,
-    1452,
-    1963,
-    1636
-   ]
-  ],
-  "scores": [
-   0.5578
-  ]
+  "bbox": [],
+  "scores": []
  },
  "TLCYAcD9TT2UUN1XlUlJjA_file.jpeg": {
   "bbox": [],
@@ -18398,30 +17137,12 @@
   "scores": []
  },
  "Cp6XQFW1RhW99WQouVRZ5g_file.jpeg": {
-  "bbox": [
-   [
-    3027,
-    1217,
-    3264,
-    1666
-   ]
-  ],
-  "scores": [
-   0.6456
-  ]
+  "bbox": [],
+  "scores": []
  },
  "8lIHRbEOR7qQ758uDoujFw_file.jpeg": {
-  "bbox": [
-   [
-    0,
-    1463,
-    176,
-    2266
-   ]
-  ],
-  "scores": [
-   0.4413
-  ]
+  "bbox": [],
+  "scores": []
  },
  "GBhrr7OBR0q6jCeq3NNYyA_file.jpeg": {
   "bbox": [
@@ -18519,17 +17240,8 @@
   "scores": []
  },
  "0EkG76VCTtKXYoX2N6HPyQ_file.jpeg": {
-  "bbox": [
-   [
-    2342,
-    2477,
-    2720,
-    2565
-   ]
-  ],
-  "scores": [
-   0.6102
-  ]
+  "bbox": [],
+  "scores": []
  },
  "lknjBk4yR3qkBi7tN2IQRg_file.jpeg": {
   "bbox": [
@@ -18819,17 +17531,8 @@
   ]
  },
  "ZZ4jJN3oSvCC15tnmlHy2Bw_file.jpeg": {
-  "bbox": [
-   [
-    2980,
-    2390,
-    3218,
-    2497
-   ]
-  ],
-  "scores": [
-   0.477
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Py8vxGNvQCO1t6vZ16rCKw_file.jpeg": {
   "bbox": [
@@ -18956,17 +17659,8 @@
   ]
  },
  "c3rRRmICSRWmjGl66SHQug_file.jpeg": {
-  "bbox": [
-   [
-    65,
-    1128,
-    347,
-    1630
-   ]
-  ],
-  "scores": [
-   0.6627
-  ]
+  "bbox": [],
+  "scores": []
  },
  "gBxishM6QneOxYudSzPoBA_file.jpeg": {
   "bbox": [
@@ -19055,24 +17749,8 @@
   ]
  },
  "3yJwQtR_RRe0CfjEJbMvTA_file.jpeg": {
-  "bbox": [
-   [
-    288,
-    1123,
-    447,
-    1766
-   ],
-   [
-    302,
-    1252,
-    438,
-    1757
-   ]
-  ],
-  "scores": [
-   0.5827,
-   0.4611
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Yqj5EFTtQ0OnKUGzj6oYdg_file.jpeg": {
   "bbox": [
@@ -19379,17 +18057,8 @@
   ]
  },
  "F2B03pmYBQT2IRDXb1ck52A_file.jpeg": {
-  "bbox": [
-   [
-    1118,
-    917,
-    2022,
-    1085
-   ]
-  ],
-  "scores": [
-   0.3847
-  ]
+  "bbox": [],
+  "scores": []
  },
  "QE8XIgAeSI2BwT0LYW2BkV1Q_file.jpeg": {
   "bbox": [],
@@ -19443,17 +18112,8 @@
   ]
  },
  "2BuSHyZhkSlOnVgiu6q5rfQ_file.jpeg": {
-  "bbox": [
-   [
-    940,
-    1102,
-    1438,
-    1477
-   ]
-  ],
-  "scores": [
-   0.5617
-  ]
+  "bbox": [],
+  "scores": []
  },
  "A7SnLu_LRDaCPf7EVP3Eaw_file.jpeg": {
   "bbox": [
@@ -19833,17 +18493,8 @@
   ]
  },
  "zrH52sJDS4OsUKye3NIJPg_file.jpeg": {
-  "bbox": [
-   [
-    3045,
-    1408,
-    3152,
-    1590
-   ]
-  ],
-  "scores": [
-   0.5846
-  ]
+  "bbox": [],
+  "scores": []
  },
  "s6J7Xxl2QdKVQBhTgxFkCQ_file.jpeg": {
   "bbox": [
@@ -19919,17 +18570,8 @@
   "scores": []
  },
  "YWfmZOXFQxq2BRxHLn2z16A_file.jpeg": {
-  "bbox": [
-   [
-    2392,
-    912,
-    2778,
-    1220
-   ]
-  ],
-  "scores": [
-   0.3962
-  ]
+  "bbox": [],
+  "scores": []
  },
  "yRLXB2B4UQti3y1zSXtmqkw_file.jpeg": {
   "bbox": [
@@ -20013,17 +18655,8 @@
   ]
  },
  "rnXMBbwxSyGobj_62BnlwIA_file.jpeg": {
-  "bbox": [
-   [
-    2289,
-    24,
-    3264,
-    1365
-   ]
-  ],
-  "scores": [
-   0.4096
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Cyj7Wsx7TnyP0WhmnDhvcg_file.jpeg": {
   "bbox": [],
@@ -20218,31 +18851,8 @@
   "scores": []
  },
  "9q9ouqTBRcyDS262LOkzNA_file.jpeg": {
-  "bbox": [
-   [
-    128,
-    1425,
-    464,
-    1970
-   ],
-   [
-    156,
-    643,
-    365,
-    1082
-   ],
-   [
-    57,
-    1243,
-    473,
-    1984
-   ]
-  ],
-  "scores": [
-   0.6088,
-   0.5637,
-   0.252
-  ]
+  "bbox": [],
+  "scores": []
  },
  "8fMS0XEyRjyEvq0b2B9NmsA_file.jpeg": {
   "bbox": [
@@ -20342,37 +18952,12 @@
   ]
  },
  "enQA932BUTYKm_SqHx5srfw_file.jpeg": {
-  "bbox": [
-   [
-    439,
-    822,
-    520,
-    856
-   ]
-  ],
-  "scores": [
-   0.6266
-  ]
+  "bbox": [],
+  "scores": []
  },
  "R8gISzqbTbWU8vctdhQ9zQ_file.jpeg": {
-  "bbox": [
-   [
-    2968,
-    1576,
-    3062,
-    1689
-   ],
-   [
-    1156,
-    1444,
-    1535,
-    1544
-   ]
-  ],
-  "scores": [
-   0.7523,
-   0.544
-  ]
+  "bbox": [],
+  "scores": []
  },
  "BMAebeGdT_2BRw_MczMSQ7A_file.jpeg": {
   "bbox": [
@@ -20672,17 +19257,8 @@
   ]
  },
  "OZKNahCATMq0JzBwLG6uMg_file.jpeg": {
-  "bbox": [
-   [
-    273,
-    1055,
-    427,
-    1492
-   ]
-  ],
-  "scores": [
-   0.5418
-  ]
+  "bbox": [],
+  "scores": []
  },
  "IKl5bMDBQnOjmyuF3cE47w_file.jpeg": {
   "bbox": [
@@ -21015,17 +19591,8 @@
   ]
  },
  "cY9aXvBXTFy4yJezLsNxXg_file.jpeg": {
-  "bbox": [
-   [
-    4269,
-    2318,
-    4579,
-    2853
-   ]
-  ],
-  "scores": [
-   0.2551
-  ]
+  "bbox": [],
+  "scores": []
  },
  "AakJ8RO1Rc6gU3XYGBz7vg_file.jpeg": {
   "bbox": [
@@ -21157,17 +19724,8 @@
   ]
  },
  "thtHVjPCS6e2B6ZLWmqUmog_file.jpeg": {
-  "bbox": [
-   [
-    285,
-    875,
-    488,
-    1266
-   ]
-  ],
-  "scores": [
-   0.6661
-  ]
+  "bbox": [],
+  "scores": []
  },
  "Epv4e2mPTWmwcExJYFcPAg_file.jpeg": {
   "bbox": [],
@@ -21389,17 +19947,8 @@
   ]
  },
  "Q0CfG0VKQju4KvHeNDEfQQ_file.jpeg": {
-  "bbox": [
-   [
-    2437,
-    812,
-    2680,
-    1085
-   ]
-  ],
-  "scores": [
-   0.264
-  ]
+  "bbox": [],
+  "scores": []
  },
  "8v5oeRveRRmjXgulBBUGWA_file.jpeg": {
   "bbox": [],
@@ -21453,17 +20002,8 @@
   ]
  },
  "mtG2BH3vETMWVeyXVx2BWAwg_file.jpeg": {
-  "bbox": [
-   [
-    122,
-    818,
-    296,
-    1482
-   ]
-  ],
-  "scores": [
-   0.5563
-  ]
+  "bbox": [],
+  "scores": []
  },
  "xQOLLxgFQ5212B7_w9XmmBQ_file.jpeg": {
   "bbox": [
@@ -21517,17 +20057,8 @@
   "scores": []
  },
  "t6IXddnPSfSsBgoLQxJ44Q_file.jpeg": {
-  "bbox": [
-   [
-    315,
-    859,
-    512,
-    1329
-   ]
-  ],
-  "scores": [
-   0.262
-  ]
+  "bbox": [],
+  "scores": []
  },
  "E9zmX5xvTaWqJUzm_frWzA_file.jpeg": {
   "bbox": [],
@@ -21659,17 +20190,8 @@
   ]
  },
  "6ZoyFxmeR3qRJfeAXK5fKg_file.jpeg": {
-  "bbox": [
-   [
-    1562,
-    880,
-    1629,
-    994
-   ]
-  ],
-  "scores": [
-   0.2939
-  ]
+  "bbox": [],
+  "scores": []
  },
  "6KArYusJTWWHTOuwR_KVnA_file.jpeg": {
   "bbox": [
@@ -21685,17 +20207,8 @@
   ]
  },
  "7v86RwlYRXi7EgdF21UgEQ_file.jpeg": {
-  "bbox": [
-   [
-    86,
-    816,
-    304,
-    1038
-   ]
-  ],
-  "scores": [
-   0.2939
-  ]
+  "bbox": [],
+  "scores": []
  },
  "JJXZ50jKQQyjx4FF_1A4UA_file.jpeg": {
   "bbox": [
@@ -21791,17 +20304,8 @@
   "scores": []
  },
  "ahc1UiLITCGW6utv4L2Jhw_file.jpeg": {
-  "bbox": [
-   [
-    1236,
-    2013,
-    1406,
-    2083
-   ]
-  ],
-  "scores": [
-   0.3296
-  ]
+  "bbox": [],
+  "scores": []
  },
  "xZOjef2BRQsqFbWC9Emd2B6A_file.jpeg": {
   "bbox": [],
@@ -21834,17 +20338,8 @@
   ]
  },
  "NNRZ1dFyQLi6GSLBWv55Ow_file.jpeg": {
-  "bbox": [
-   [
-    1374,
-    397,
-    2371,
-    1069
-   ]
-  ],
-  "scores": [
-   0.5262
-  ]
+  "bbox": [],
+  "scores": []
  },
  "FBsbKVs2Smm_2BfCdG1RA5Q_file.jpeg": {
   "bbox": [
