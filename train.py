@@ -51,7 +51,7 @@ Albumentations.__init__ = __init__
 
 #==============================================================================================================
 
-
+'''
 #YOLOv8s --->============================================================================================================
 print("Training yolov8s ...\n")
 
@@ -81,7 +81,7 @@ config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_da
 
 # Train the Model -> yolov8s
 results = model.train(**config)
-
+'''
 
 # YOLOv8m START ================================================================================================================
 print("Training yolov8m ...\n")
@@ -89,7 +89,7 @@ print("Training yolov8m ...\n")
 # Add other HPs here
 model_file = "yolov8m.yaml"
 
-train_version = "v2_m"
+train_version = "v3_m"
 
 #Load a Model
 model = YOLO(model_file)

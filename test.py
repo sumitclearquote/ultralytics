@@ -1,5 +1,5 @@
 '''
-Run instruction: -> python test.py iounmsthresh confthresh
+Run instruction: -> python test.py <iounmsthresh> <confthresh>
 '''
 from ultralytics import YOLO
 import sys
@@ -8,8 +8,8 @@ import torch
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 
-model_type = "v2_m"
-data = "spinny2" #[val, spinny2]
+model_type = "v3_m"
+data = "val" #[val, spinny2]
 
 
 
@@ -17,7 +17,7 @@ model_path = f"my_runs/lpblur/{model_type}/weights/best.pt"
 print("Loading model from: ", model_path)
 model = YOLO(model_path)
 
-conf = float(sys.argv[2])
+conf = float(sys.argv[2]) #default = 0.001
 iou_nms_thresh = float(sys.argv[1]) #default=0.7
 batch_size = 160 if model_type.endswith("s") else 192 if model_type.endswith("n") else 74 if model_type.endswith("m") else 1
 
