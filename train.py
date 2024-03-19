@@ -89,7 +89,7 @@ print("Training yolov8m ...\n")
 # Add other HPs here
 model_file = "yolov8m.yaml"
 
-train_version = "v3_m"
+train_version = "v4_m"
 
 #Load a Model
 model = YOLO(model_file)
