@@ -62,7 +62,7 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 if __name__ == '__main__':
     iterations = ["v4_m"]
     save_results = True
-    dtype = "audit" #[val, spinny2, "audit", "quotes200"]
+    dtype = "quotes200" #[val, spinny2, "audit", "quotes200"]
     conf_thresholds = [0.1,0.2,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.7,0.8]
     iou_nms_thresh = 0.7
 
