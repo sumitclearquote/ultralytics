@@ -22,7 +22,7 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
         
         imgw, imgw, _ = img.shape
         
-        results = model(imgpath, imgsz=480, iou=iou_nms_thresh, device=device, verbose = False)
+        results = model(imgpath, imgsz=480, iou=iou_nms_thresh, conf=conf_threshold, device=device, verbose = False)
 
         result = results[0]
         
@@ -40,10 +40,10 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
         for i, box in enumerate(boxes):
             conf = box.conf[0]
             
-            if conf < conf_threshold:# If conf < threshold
-                results_dict[imgname]['bbox'] = []
-                results_dict[imgname]['scores'] = []
-                continue
+            #if conf < conf_threshold:# If conf < threshold
+            #    results_dict[imgname]['bbox'] = []
+            #    results_dict[imgname]['scores'] = []
+            #    continue
                 
             bbox = box.xyxy[0].astype(int)
             results_dict[imgname]['bbox'].append(bbox.tolist())
@@ -60,10 +60,10 @@ def generate_predictions(imgdir, model, dest_dir, conf_threshold = None, iou_nms
 
 
 if __name__ == '__main__':
-    iterations = ["v4_m"]
+    iterations = ["v3_m", "v4_m"]
     save_results = True
-    dtype = "quotes200" #[val, spinny2, "audit", "quotes200"]
-    conf_thresholds = [0.1,0.2,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.7,0.8]
+    dtype = "audit" #[val, spinny2, "audit", "quotes200"]
+    conf_thresholds = [0.1,0.2]
     iou_nms_thresh = 0.7
 
 
