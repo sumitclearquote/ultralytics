@@ -73,9 +73,9 @@ project_path = f'/home/paintfrmladmin01/datadrive/ssqs/yolo_runs/{project_name}'
 
 
 config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-            'epochs': 30,
-            'batch': 256,
-            'imgsz':224,
+            'epochs': 100,
+            'batch': 1,
+            'imgsz':480,
             'device':device,
             'patience':5,
             'project':project_path,
