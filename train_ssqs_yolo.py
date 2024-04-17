@@ -58,7 +58,7 @@ project_name = "wheelrim_cover_pads"
 #name of the dataset folder
 dataset_name = "wheelrim-pad-cover_yolo_dataset"
 yolo_cfg = "wheelrim_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_version = "v3_n"
+train_version = "v4_n"
 
 # Add other HPs here
 model_file = "yolov8n.yaml"
@@ -73,16 +73,16 @@ project_path = f'/home/paintfrmladmin01/datadrive/ssqs/yolo_runs/{project_name}'
 
 
 config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-            'epochs': 100,
+            'epochs': 150,
             'batch': 2,
-            'imgsz':640,
+            'imgsz':480,
             'device':device,
-            'patience':20,
+            'patience':40,
             'project':project_path,
             'name':train_version,
             'close_mosaic': 5,
             'mosaic':0.0,
-            'fliplr':0.4
+            'fliplr':0.5
         }
 
 # Train the Model -> yolov8s
