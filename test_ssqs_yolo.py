@@ -9,7 +9,7 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 dataset_name = "wheelrim-pad-cover_yolo_dataset"
 project_name = "wheelrim_cover_pads"
-model_version = "v2_n"
+model_version = "v3_n"
 yolo_cfg = "wheelrim_data.yaml"
 data = "val" #[val, spinny2]
 
