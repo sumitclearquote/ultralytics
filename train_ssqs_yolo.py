@@ -58,10 +58,14 @@ project_name = "wheelrim_cover_pads"
 #name of the dataset folder
 dataset_name = "wheelrim-pad-cover_yolo_dataset_0.1"
 yolo_cfg = "wheelrim_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_version = "v5_n"
+train_version = "v1_s"
 
-# Add other HPs here
-model_file = "yolov8n.yaml"
+
+if train_version.endswith("n"):
+    # Add other HPs here
+    model_file = "yolov8n.yaml"
+elif train_version.endswith("s"):
+    model_file = "yolov8s.yaml"
 
 
 
