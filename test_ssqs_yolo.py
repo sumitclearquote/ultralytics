@@ -7,9 +7,9 @@ import torch
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-dataset_name = "wheelrim-pad-cover_yolo_dataset"
+dataset_name = "wheelrim-pad-cover_yolo_dataset_0.1"
 project_name = "wheelrim_cover_pads"
-model_version = "v3_n"
+model_version = "v5_n"
 yolo_cfg = "wheelrim_data.yaml"
 data = "val" #[val, spinny2]
 
@@ -34,7 +34,7 @@ config = {'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name
         'save_conf' : True, 
         'save_json' : True, 
         'save_txt' : True,
-        'project' : f"my_runs/{project_name}/{model_version}/val", 
+        'project' : f'/home/paintfrmladmin01/datadrive/ssqs/yolo_runs/{project_name}/{model_version}/val', 
         'name' : f"{data}_{iou_nms_thresh}_{conf}"
 
         }
