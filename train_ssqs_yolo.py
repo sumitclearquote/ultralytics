@@ -27,12 +27,12 @@ def __init__(self, p=1.0):
             A.RandomGamma(p=0.0),
             A.ImageCompression(quality_lower=75, p=0.02),
         ]
-        '''
-        Add custom augmentation here
-        T += [A.HorizontalFlip(p=0.2),
-              A.VerticalFlip(p=0.15),
+        #'''
+        #Add custom augmentation here
+        T += [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.2),
               ]
-        '''
+        #'''
+        
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
 
         LOGGER.info(prefix + ", ".join(f"{x}".replace("always_apply=False, ", "") for x in T if x.p))
@@ -50,48 +50,69 @@ Albumentations.__init__ = __init__
 
 #'''
 #YOLOv8s --->============================================================================================================
-print("Training yolov8n ...\n")
+
 
 # A directory inside "yolo_runs" will be created with the below name
 project_name = "wheelrim_cover_pads"
 
 #name of the dataset folder
-dataset_name = "wheelrim-pad-cover_yolo_dataset_0.1"
+dataset_name = "wheelrim-pad-cover_yolo_dataset_0.05"
 yolo_cfg = "wheelrim_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_version = "v1_s"
+train_versions = ["v6_p2_n", "v6_n"]
 
 
-if train_version.endswith("n"):
-    # Add other HPs here
-    model_file = "yolov8n.yaml"
-elif train_version.endswith("s"):
-    model_file = "yolov8s.yaml"
+for train_version in train_versions:
+    
+    if train_version.endswith("n") and "p" not in train_version:
+        # Add other HPs here
+        model_file = "yolov8n.yaml"
+    if train_version.endswith("n") and 'p' in train_version:
+        # Add other HPs here
+        model_file = "yolov8n-p2.yaml"
+    elif train_version.endswith("s"):
+        model_file = "yolov8s.yaml"
+
+    print(f"Training {model_file.split('.')[0]} ...\n")
+
+    #Load a Model
+    model = YOLO(model_file)
+
+    project_path = f'/home/paintfrmladmin01/datadrive/ssqs/yolo_runs/{project_name}'
 
 
 
-#Load a Model
-model = YOLO(model_file)
+    config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
+                'epochs': 250,
+                'lr0':0.0001, #default is 1e-3
+                'batch': 1,
+                'imgsz':800,
+                'device':device,
+                'patience':50,
+                'project':project_path,
+                'name':train_version,
+                'close_mosaic': 5,
+                'mosaic':0.4,
+                'fliplr':0.5
+            }
 
-project_path = f'/home/paintfrmladmin01/datadrive/ssqs/yolo_runs/{project_name}'
-
-
-
-config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-            'epochs': 250,
-            'batch': 2,
-            'imgsz':640,
-            'device':device,
-            'patience':50,
-            'project':project_path,
-            'name':train_version,
-            'close_mosaic': 5,
-            'mosaic':0.0,
-            'fliplr':0.6
-        }
-
-# Train the Model -> yolov8s
-results = model.train(**config)
+    # Train the Model -> yolov8s
+    results = model.train(**config)
 #'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 '''
