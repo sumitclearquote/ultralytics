@@ -36,8 +36,8 @@ def __init__(self, p=1.0):
                 A.Perspective(p = 0.1),
                 #A.ChannelShuffle(p = 0.15),
                 A.ColorJitter(p = 0.05),
-                #A.Downscale(scale_min=0.20, scale_max=0.3, p = 0.1),
-                #A.MotionBlur(blur_limit = 13, p = 0.2)
+                A.Downscale(scale_min=0.20, scale_max=0.3, p = 0.1),
+                A.MotionBlur(blur_limit = 13, p = 0.2)
         ]
         #'''
         
