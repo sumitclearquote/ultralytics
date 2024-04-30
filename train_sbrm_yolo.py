@@ -90,7 +90,7 @@ for train_version in train_versions:
         lr = 0.001
     elif train_version.endswith("x"):
         model_file = "yolov8x.yaml"
-        bsize = 96 #batch_size
+        bsize = 80 #batch_size
         lr = 0.001
 
     print(f"Training {model_file.split('.')[0]} ...\n")
