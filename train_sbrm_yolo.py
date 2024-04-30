@@ -27,19 +27,19 @@ def __init__(self, p=1.0):
             A.RandomGamma(p=0.0),
             A.ImageCompression(quality_lower=75, p=0.02),
         ]
-        '''
+        #'''
         #Add custom augmentation here
         T += [  A.HorizontalFlip(p=0.7),
-                A.VerticalFlip(p=0.2),
-                A.RandomSizedBBoxSafeCrop(height= 450, width=800, erosion_rate=0.3, p = 0.3),
-                A.Affine(scale=(0.9, 1.8), shear=(-20, 20), rotate=(-180,180),  p = 0.2),
-                A.Perspective(p = 0.1),
-                A.ChannelShuffle(p = 0.15),
-                A.ColorJitter(p = 0.05),
-                A.Downscale(scale_min=0.20, scale_max=0.3, p = 0.1),
-                A.MotionBlur(blur_limit = 13, p = 0.2)
+                #A.VerticalFlip(p=0.2),
+                #A.RandomSizedBBoxSafeCrop(height= 450, width=800, erosion_rate=0.3, p = 0.3),
+                #A.Affine(scale=(0.9, 1.8), shear=(-20, 20), rotate=(-180,180),  p = 0.2),
+                #A.Perspective(p = 0.1),
+                #A.ChannelShuffle(p = 0.15),
+                #A.ColorJitter(p = 0.05),
+                #A.Downscale(scale_min=0.20, scale_max=0.3, p = 0.1),
+                #A.MotionBlur(blur_limit = 13, p = 0.2)
         ]
-        '''
+        #'''
         
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
 
@@ -66,7 +66,7 @@ project_name = "sbrm"
 #name of the dataset folder
 dataset_name = "sbrm_yolo_dataset"
 yolo_cfg = "sbrm_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v2_m"] #["v2_s", "v2_m", "v2_l", "v2_x"]
+train_versions = ["v2_x"] #["v2_s", "v2_m", "v2_l", "v2_x"]
 
 
 for train_version in train_versions:
