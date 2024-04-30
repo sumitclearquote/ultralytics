@@ -31,7 +31,7 @@ def __init__(self, p=1.0):
         #Add custom augmentation here
         T += [  A.HorizontalFlip(p=0.7),
                 A.VerticalFlip(p=0.2),
-                A.RandomSizedBBoxSafeCrop(height= 640, width=640, erosion_rate=0.3, p = 0.3),
+                A.RandomSizedBBoxSafeCrop(height= 800, width=800, erosion_rate=0.3, p = 0.3),
                 #A.Affine(scale=(0.9, 1.8), shear=(-20, 20), rotate=(-180,180),  p = 0.2),
                 #A.Perspective(p = 0.1),
                 #A.ChannelShuffle(p = 0.15),
@@ -93,7 +93,7 @@ for train_version in train_versions:
         bsize = 16
     elif train_version.endswith("x"):
         model_file = "yolov8x.yaml"
-        bsize = 8 #batch_size
+        bsize = 4 #batch_size
         lr = 0.001
 
     print(f"Training {model_file.split('.')[0]} ...\n")
