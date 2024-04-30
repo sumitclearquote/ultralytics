@@ -90,6 +90,7 @@ for train_version in train_versions:
         lr = 0.001
     elif train_version.endswith("x"):
         model_file = "yolov8x.yaml"
+        bsize = 96 #batch_size
         lr = 0.001
 
     print(f"Training {model_file.split('.')[0]} ...\n")
@@ -104,7 +105,7 @@ for train_version in train_versions:
     config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
                 'epochs': 120,
                 'lr0':lr, #default is 1e-3
-                'batch': 128,
+                'batch': bsize,
                 'imgsz':800,
                 'device':device,
                 'patience':50,
