@@ -66,7 +66,7 @@ project_name = "sbrm"
 #name of the dataset folder
 dataset_name = "sbrm_yolo_dataset"
 yolo_cfg = "sbrm_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v2_x"] #["v2_s", "v2_m", "v2_l", "v2_x"]
+train_versions = ["v2_l"] #["v2_s", "v2_m", "v2_l", "v2_x"]
 
 
 for train_version in train_versions:
