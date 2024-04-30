@@ -88,7 +88,7 @@ for train_version in train_versions:
     elif train_version.endswith("l"):
         model_file = "yolov8l.yaml"
         lr = 0.001
-        bsize = 32
+        bsize = 16
     elif train_version.endswith("x"):
         model_file = "yolov8x.yaml"
         bsize = 8 #batch_size
