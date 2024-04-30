@@ -27,7 +27,7 @@ def __init__(self, p=1.0):
             A.RandomGamma(p=0.0),
             A.ImageCompression(quality_lower=75, p=0.02),
         ]
-        #'''
+        '''
         #Add custom augmentation here
         T += [  A.HorizontalFlip(p=0.7),
                 A.VerticalFlip(p=0.2),
@@ -39,7 +39,7 @@ def __init__(self, p=1.0):
                 A.Downscale(scale_min=0.20, scale_max=0.3, p = 0.1),
                 A.MotionBlur(blur_limit = 13, p = 0.2)
         ]
-        #'''
+        '''
         
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
 
