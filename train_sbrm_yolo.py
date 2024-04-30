@@ -82,6 +82,7 @@ for train_version in train_versions:
     elif train_version.endswith("s"):
         lr = 0.001
         model_file = "yolov8s.yaml"
+        bsize = 32
     elif train_version.endswith("m"):
         model_file = "yolov8m.yaml"
         lr = 0.001
