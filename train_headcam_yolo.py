@@ -23,14 +23,22 @@ def __init__(self, p=1.0):
             A.MedianBlur(p=0.01),
             A.ToGray(p=0.01),
             A.CLAHE(p=0.01),
-            A.RandomBrightnessContrast(p=0.05),
+            A.RandomBrightnessContrast(brightness_limit=(-0.3,-0.1),contrast_limit=(-0.1, 0.1), p = 0.2), #og is 0.05, no other arguments
             A.RandomGamma(p=0.0),
             A.ImageCompression(quality_lower=75, p=0.02),
         ]
         #'''
         #Add custom augmentation here
-        T += [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.2),
-              ]
+        T += [  A.HorizontalFlip(p=0.7),
+                A.VerticalFlip(p=0.2),
+                A.RandomSizedBBoxSafeCrop(height= 800, width=800, erosion_rate=0.3, p = 0.3),
+                A.Affine(scale=(0.9, 1.8), shear=(-20, 20), rotate=(-180,180),  p = 0.2),
+                A.Perspective(p = 0.1),
+                #A.ChannelShuffle(p = 0.1),
+                A.ColorJitter(p = 0.15),
+                A.Downscale(scale_min=0.20, scale_max=0.3, p = 0.1),
+                A.MotionBlur(blur_limit = 13, p = 0.2)
+        ]
         #'''
         
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
@@ -53,12 +61,12 @@ Albumentations.__init__ = __init__
 
 
 # A directory inside "yolo_runs" will be created with the below name
-project_name = "wheelrim_cover_pads"
+project_name = "final_headcam"
 
 #name of the dataset folder
-dataset_name = "wheelrim-pad-cover_yolo_dataset_0.05" #wheelrim and lifting pads were expanded by 5% of bbox area
-yolo_cfg = "wheelrim_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v6_p2_n", "v6_n"]
+dataset_name = "final_headcam_yolo_dataset"
+yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
+train_versions = ["v2_s", "v2_m", "v2_l"]
 
 
 for train_version in train_versions:
@@ -66,11 +74,27 @@ for train_version in train_versions:
     if train_version.endswith("n") and "p" not in train_version:
         # Add other HPs here
         model_file = "yolov8n.yaml"
+        lr = 0.001
     if train_version.endswith("n") and 'p' in train_version:
         # Add other HPs here
         model_file = "yolov8n-p2.yaml"
+        lr = 0.0001
     elif train_version.endswith("s"):
+        lr = 0.001
         model_file = "yolov8s.yaml"
+        bsize = 32
+    elif train_version.endswith("m"):
+        model_file = "yolov8m.yaml"
+        lr = 0.001
+        bsize = 24
+    elif train_version.endswith("l"):
+        model_file = "yolov8l.yaml"
+        lr = 0.001
+        bsize = 16
+    elif train_version.endswith("x"):
+        model_file = "yolov8x.yaml"
+        lr = 0.001
+        bsize = 8 #batch_size
 
     print(f"Training {model_file.split('.')[0]} ...\n")
 
@@ -82,67 +106,21 @@ for train_version in train_versions:
 
 
     config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-                'epochs': 250,
-                'lr0':0.0001, #default is 1e-3
-                'batch': 1,
+                'epochs': 120,
+                'lr0':lr, #default is 1e-3
+                'batch': bsize,
                 'imgsz':800,
                 'device':device,
                 'patience':50,
                 'project':project_path,
                 'name':train_version,
                 'close_mosaic': 5,
-                'mosaic':0.4,
-                'fliplr':0.5
+                'mosaic':0.3,
             }
 
     # Train the Model -> yolov8s
     results = model.train(**config)
-#'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-# YOLOv8m START ================================================================================================================
-print("Training yolov8m ...\n")
-
-# Add other HPs here
-model_file = "yolov8m.yaml"
-
-train_version = "v4_m"
-
-#Load a Model
-model = YOLO(model_file)
-
-project_path = '/home/paintfrmladmin01/datadrive/LPBlur/ultralytics/my_runs/lpblur/'
-#project_path = '/home/paintfrmladmin01/datadrive/LPBlur/runs'
-
-
-config  ={  'data': "/home/paintfrmladmin01/datadrive/LPBlur/datasets/LP_yolo_dataset/lp_data.yaml", 
-            'epochs': 80,
-            'batch': 74,
-            'imgsz':480,
-            'device':device,
-            'patience':10,
-            'project':project_path,
-            'name':train_version,
-            'close_mosaic': 5,
-            'mosaic':0.55
-        }
-
-# Train the Model -> yolov8m
-results = model.train(**config)
-'''
+    
+    
+    
+#====================================== THE END ======================================
