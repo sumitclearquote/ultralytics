@@ -66,7 +66,7 @@ project_name = "final_headcam"
 #name of the dataset folder
 dataset_name = "final_headcam_yolo_dataset"
 yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v2_l"] #["v2_s", "v2_m", "v2_l"]
+train_versions = ["v2_s", "v2_m", "v2_l"]
 
 
 for train_version in train_versions:
