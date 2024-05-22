@@ -87,7 +87,7 @@ for train_version in train_versions:
     elif train_version.endswith("s") and 'p' in train_version:
         lr = 0.0001
         model_file = "yolov8s-p2.yaml"
-        bsize = 32
+        bsize = 24
         
     elif train_version.endswith("m") and 'p' not in train_version:
         model_file = "yolov8m.yaml"
