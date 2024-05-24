@@ -66,7 +66,7 @@ project_name = "final_headcam"
 #name of the dataset folder
 dataset_name = "final_headcam_yolo_dataset"
 yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v2_s", "v2_m", "v2_l"]
+train_versions = ["v2_n", "v2_p_m"] #["v2_n", "v2_s", "v2_p_s", "v2_m", "v2_p_m"]
 
 
 for train_version in train_versions:
@@ -75,18 +75,32 @@ for train_version in train_versions:
         # Add other HPs here
         model_file = "yolov8n.yaml"
         lr = 0.001
+        bsize = 64
     if train_version.endswith("n") and 'p' in train_version:
         # Add other HPs here
         model_file = "yolov8n-p2.yaml"
         lr = 0.0001
-    elif train_version.endswith("s"):
+        bsize = 32
+    elif train_version.endswith("s") and "p" not in train_version:
         lr = 0.001
         model_file = "yolov8s.yaml"
         bsize = 32
-    elif train_version.endswith("m"):
+    elif train_version.endswith("s") and 'p' in train_version:
+        lr = 0.0001
+        model_file = "yolov8s-p2.yaml"
+        bsize = 24
+        
+    elif train_version.endswith("m") and 'p' not in train_version:
         model_file = "yolov8m.yaml"
         lr = 0.001
         bsize = 24
+    elif train_version.endswith("m") and 'p' in train_version:
+        model_file = "yolov8m-p2.yaml"
+        lr = 0.0001
+        bsize = 16
+        
+        
+        
     elif train_version.endswith("l"):
         model_file = "yolov8l.yaml"
         lr = 0.001
@@ -106,7 +120,7 @@ for train_version in train_versions:
 
 
     config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-                'epochs': 120,
+                'epochs': 1,
                 'lr0':lr, #default is 1e-3
                 'batch': bsize,
                 'imgsz':800,
@@ -115,7 +129,7 @@ for train_version in train_versions:
                 'project':project_path,
                 'name':train_version,
                 'close_mosaic': 5,
-                'mosaic':0.3,
+                'mosaic':0.35,
             }
 
     # Train the Model -> yolov8s
