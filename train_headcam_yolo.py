@@ -66,7 +66,7 @@ project_name = "final_headcam"
 #name of the dataset folder
 dataset_name = "final_headcam_yolo_dataset"
 yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v2_m"] #["v2_n", "v2_s", "v2_p_s", "v2_m", "v2_p_m"]
+train_versions = ["v2_n", "v2_s", "v2_p_s", "v2_m", "v2_p_m"]
 
 
 for train_version in train_versions:
@@ -120,7 +120,7 @@ for train_version in train_versions:
 
 
     config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-                'epochs': 1,
+                'epochs': 120,
                 'lr0':lr, #default is 1e-3
                 'batch': bsize,
                 'imgsz':800,
