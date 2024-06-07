@@ -29,7 +29,7 @@ def __init__(self, p=1.0):
         ]
         #'''
         #Add custom augmentation here
-        T += [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.2),
+        T += [A.RGBShift(r_shift_limit=(-20, 20), g_shift_limit=(-20, 20), b_shift_limit=(-20, 20), p = 0.25),
               ]
         #'''
         
@@ -56,9 +56,9 @@ Albumentations.__init__ = __init__
 project_name = "wheelrim_cover_pads"
 
 #name of the dataset folder
-dataset_name = "wheelrim-pad-cover_yolo_dataset_0.05" #wheelrim and lifting pads were expanded by 5% of bbox area
+dataset_name = "wheelrim-pad-cover_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
 yolo_cfg = "wheelrim_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v6_p2_n", "v6_n"]
+train_versions = ["v7_p2_n", "v7_n"]
 
 
 for train_version in train_versions:
@@ -66,11 +66,14 @@ for train_version in train_versions:
     if train_version.endswith("n") and "p" not in train_version:
         # Add other HPs here
         model_file = "yolov8n.yaml"
+        lr = 0.001
     if train_version.endswith("n") and 'p' in train_version:
         # Add other HPs here
         model_file = "yolov8n-p2.yaml"
+        lr = 0.0001
     elif train_version.endswith("s"):
         model_file = "yolov8s.yaml"
+        lr = 0.001
 
     print(f"Training {model_file.split('.')[0]} ...\n")
 
@@ -83,9 +86,9 @@ for train_version in train_versions:
 
     config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
                 'epochs': 250,
-                'lr0':0.0001, #default is 1e-3
-                'batch': 1,
-                'imgsz':800,
+                'lr0':lr, #default is 1e-3
+                'batch': 64,
+                'imgsz':640,
                 'device':device,
                 'patience':50,
                 'project':project_path,
