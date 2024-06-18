@@ -62,7 +62,7 @@ project_name = "smartphone"
 #name of the dataset folder
 dataset_name = "final_smartphone_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
 yolo_cfg = "final_smartphone_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v1_n"]
+train_versions = ["v1_s"]
 imgsizes = [320,640]
 
 for train_version in train_versions:
