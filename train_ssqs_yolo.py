@@ -1,3 +1,4 @@
+'''Script to train fixedcam1 model'''
 from ultralytics.data.augment import Albumentations
 from ultralytics.utils import LOGGER, colorstr
 from ultralytics.utils.checks import check_version
