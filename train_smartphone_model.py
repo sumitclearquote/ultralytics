@@ -60,7 +60,7 @@ Albumentations.__init__ = __init__
 project_name = "smartphone"
 
 #name of the dataset folder
-dataset_name = "smartphone_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
+dataset_name = "final_smartphone_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
 yolo_cfg = "final_smartphone_data.yaml" #name of the yolo cfg yaml file inside dataset
 train_versions = ["v1_n"]
 imgsizes = [320,640]
