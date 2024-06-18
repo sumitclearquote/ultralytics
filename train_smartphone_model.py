@@ -97,7 +97,7 @@ for train_version in train_versions:
 
 
         config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-                    'epochs': 1,
+                    'epochs': 120,
                     'lr0':lr, #default is 1e-3
                     'batch': bsize,
                     'imgsz':imgsize,
