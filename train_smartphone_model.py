@@ -30,7 +30,7 @@ def __init__(self, p=1.0):
         ]
         #'''
         #Add custom augmentation here
-        T +=                           [A.ChannelShuffle(p = 0.2),
+        T +=                           [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.25),
                                         A.Rotate(limit= 45, p =0.5),
                                         A.GaussianBlur(p = 0.25),
                                         A.Perspective(p=0.3)
