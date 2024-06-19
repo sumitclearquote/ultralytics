@@ -7,10 +7,10 @@ import torch
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-dataset_name = "wheelrim-pad-cover_yolo_dataset_0.1"
-project_name = "wheelrim_cover_pads"
-model_version = "v5_n"
-yolo_cfg = "wheelrim_data.yaml"
+dataset_name = "final_smartphone_yolo_dataset"
+project_name = "final_smartphone"
+model_version = "v1_n"
+yolo_cfg = "final_smartphone_data.yaml"
 data = "val" #[val, spinny2]
 
 
@@ -25,7 +25,7 @@ iou_nms_thresh = float(sys.argv[1]) #default=0.7
 batch_size = 256
 
 config = {'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}",  
-          'imgsz' : 640,
+          'imgsz' : 320,
           'batch' : batch_size,
          'conf' : conf, 
         'iou' : iou_nms_thresh,  

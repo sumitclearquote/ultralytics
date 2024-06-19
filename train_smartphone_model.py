@@ -62,7 +62,7 @@ project_name = "final_smartphone"
 #name of the dataset folder
 dataset_name = "final_smartphone_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
 yolo_cfg = "final_smartphone_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v2_n"]
+train_versions = ["v3_n"]
 imgsizes = [320]
 
 for train_version in train_versions:
@@ -97,7 +97,7 @@ for train_version in train_versions:
 
 
         config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-                    'epochs': 50,
+                    'epochs': 40,
                     'lr0':lr, #default is 1e-3
                     'batch': bsize,
                     'imgsz':imgsize,
@@ -105,8 +105,8 @@ for train_version in train_versions:
                     'patience':10,
                     'project':project_path,
                     'name':train_version,
-                    'close_mosaic': 5,
-                    'mosaic':0.4,
+                    'close_mosaic': 0,
+                    'mosaic':0.0,
                 }
 
         # Train the Model -> yolov8s
