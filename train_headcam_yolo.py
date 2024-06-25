@@ -75,9 +75,9 @@ for train_version in train_versions:
             model_file = "yolov8n.yaml"
             lr = 0.001
             if imgsize == 640:
-                bsize = 64
+                bsize = 128
             elif imgsize == 800:
-                bsize = 32
+                bsize = 96
                 
         elif train_version.endswith("n") and 'p' in train_version:
             # Add other HPs here
