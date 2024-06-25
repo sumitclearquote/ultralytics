@@ -120,30 +120,30 @@ for train_version in train_versions:
             lr = 0.001
             bsize = 8 #batch_size
 
-    print(f"Training {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize}...\n")
+        print(f"Training {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize}...\n")
 
-    #Load a Model
-    model = YOLO(model_file)
+        #Load a Model
+        model = YOLO(model_file)
 
-    project_path = f'/home/paintfrmladmin01/datadrive/ssqs/yolo_runs/{project_name}'
+        project_path = f'/home/paintfrmladmin01/datadrive/ssqs/yolo_runs/{project_name}'
 
 
 
-    config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-                'epochs': 120,
-                'lr0':lr, #default is 1e-3
-                'batch': bsize,
-                'imgsz':imgsize,
-                'device':device,
-                'patience':30,
-                'project':project_path,
-                'name':train_version,
-                'close_mosaic': 5,
-                'mosaic':0.2,
-            }
+        config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
+                    'epochs': 120,
+                    'lr0':lr, #default is 1e-3
+                    'batch': bsize,
+                    'imgsz':imgsize,
+                    'device':device,
+                    'patience':30,
+                    'project':project_path,
+                    'name':f"{train_version}_{imgsize}",
+                    'close_mosaic': 5,
+                    'mosaic':0.2,
+                }
 
-    # Train the Model -> yolov8s
-    results = model.train(**config)
+        # Train the Model -> yolov8s
+        results = model.train(**config)
     
     
     
