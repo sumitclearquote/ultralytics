@@ -30,11 +30,10 @@ def __init__(self, p=1.0):
         #'''
         #Add custom augmentation here
         T += [  A.HorizontalFlip(p=0.7),
-                A.VerticalFlip(p=0.2),
-                A.RandomSizedBBoxSafeCrop(height= 800, width=800, erosion_rate=0.3, p = 0.3),
+                #A.VerticalFlip(p=0.2),
+                #A.RandomSizedBBoxSafeCrop(height= 800, width=800, erosion_rate=0.3, p = 0.3),
                 A.Affine(scale=(0.9, 1.8), shear=(-20, 20), rotate=(-180,180),  p = 0.2),
                 A.Perspective(p = 0.1),
-                #A.ChannelShuffle(p = 0.1),
                 A.ColorJitter(p = 0.15),
                 A.Downscale(scale_min=0.20, scale_max=0.3, p = 0.1),
                 A.MotionBlur(blur_limit = 13, p = 0.2)
@@ -66,49 +65,60 @@ project_name = "final_headcam"
 #name of the dataset folder
 dataset_name = "final_headcam_yolo_dataset"
 yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v2_n", "v2_s", "v2_p_s", "v2_m", "v2_p_m"]
-
+train_versions = ["v3_n", "v3_s","v3_m",]
+imgsizes = [640, 800]
 
 for train_version in train_versions:
-    
-    if train_version.endswith("n") and "p" not in train_version:
-        # Add other HPs here
-        model_file = "yolov8n.yaml"
-        lr = 0.001
-        bsize = 64
-    if train_version.endswith("n") and 'p' in train_version:
-        # Add other HPs here
-        model_file = "yolov8n-p2.yaml"
-        lr = 0.0001
-        bsize = 32
-    elif train_version.endswith("s") and "p" not in train_version:
-        lr = 0.001
-        model_file = "yolov8s.yaml"
-        bsize = 32
-    elif train_version.endswith("s") and 'p' in train_version:
-        lr = 0.0001
-        model_file = "yolov8s-p2.yaml"
-        bsize = 24
-        
-    elif train_version.endswith("m") and 'p' not in train_version:
-        model_file = "yolov8m.yaml"
-        lr = 0.001
-        bsize = 24
-    elif train_version.endswith("m") and 'p' in train_version:
-        model_file = "yolov8m-p2.yaml"
-        lr = 0.0001
-        bsize = 16
-        
-        
-        
-    elif train_version.endswith("l"):
-        model_file = "yolov8l.yaml"
-        lr = 0.001
-        bsize = 16
-    elif train_version.endswith("x"):
-        model_file = "yolov8x.yaml"
-        lr = 0.001
-        bsize = 8 #batch_size
+    for imgsize in imgsizes:
+        if train_version.endswith("n") and "p" not in train_version:
+            # Add other HPs here
+            model_file = "yolov8n.yaml"
+            lr = 0.001
+            if imgsize == 640:
+                bsize = 64
+            elif imgsize == 800:
+                bsize = 32
+                
+        elif train_version.endswith("n") and 'p' in train_version:
+            # Add other HPs here
+            model_file = "yolov8n-p2.yaml"
+            lr = 0.0001
+            bsize = 32
+            
+        elif train_version.endswith("s") and "p" not in train_version:
+            lr = 0.001
+            model_file = "yolov8s.yaml"
+            if imgsize == 640:
+                bsize = 64
+            elif imgsize == 800:
+                bsize = 32
+        elif train_version.endswith("s") and 'p' in train_version:
+            lr = 0.0001
+            model_file = "yolov8s-p2.yaml"
+            bsize = 24
+            
+        elif train_version.endswith("m") and 'p' not in train_version:
+            model_file = "yolov8m.yaml"
+            lr = 0.001
+            if imgsize == 640:
+                bsize = 64
+            elif imgsize == 800:
+                bsize = 32
+        elif train_version.endswith("m") and 'p' in train_version:
+            model_file = "yolov8m-p2.yaml"
+            lr = 0.0001
+            bsize = 16
+            
+            
+            
+        elif train_version.endswith("l"):
+            model_file = "yolov8l.yaml"
+            lr = 0.001
+            bsize = 16
+        elif train_version.endswith("x"):
+            model_file = "yolov8x.yaml"
+            lr = 0.001
+            bsize = 8 #batch_size
 
     print(f"Training {model_file.split('.')[0]} ...\n")
 
@@ -123,13 +133,13 @@ for train_version in train_versions:
                 'epochs': 120,
                 'lr0':lr, #default is 1e-3
                 'batch': bsize,
-                'imgsz':800,
+                'imgsz':imgsize,
                 'device':device,
-                'patience':50,
+                'patience':30,
                 'project':project_path,
                 'name':train_version,
                 'close_mosaic': 5,
-                'mosaic':0.35,
+                'mosaic':0.2,
             }
 
     # Train the Model -> yolov8s
