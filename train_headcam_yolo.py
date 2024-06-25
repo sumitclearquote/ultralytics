@@ -66,7 +66,7 @@ project_name = "final_headcam"
 dataset_name = "final_headcam_yolo_dataset"
 yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
 train_versions = ["v3_m"]#,["v3_n", "v3_s","v3_m",]
-imgsizes = [640]
+imgsizes = [800]
 
 for train_version in train_versions:
     for imgsize in imgsizes:
@@ -103,7 +103,7 @@ for train_version in train_versions:
             if imgsize == 640:
                 bsize = 40
             elif imgsize == 800:
-                bsize = 32
+                bsize = 16
         elif train_version.endswith("m") and 'p' in train_version:
             model_file = "yolov8m-p2.yaml"
             lr = 0.0001
