@@ -65,7 +65,7 @@ project_name = "final_headcam"
 #name of the dataset folder
 dataset_name = "final_headcam_yolo_dataset"
 yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v3_n", "v3_s","v3_m",]
+train_versions = ["v3_s", "v3_n","v3_m",]
 imgsizes = [640, 800]
 
 for train_version in train_versions:
@@ -120,7 +120,7 @@ for train_version in train_versions:
             lr = 0.001
             bsize = 8 #batch_size
 
-    print(f"Training {model_file.split('.')[0]} with lr {lr} , batch_size {bsize} and imgsize {imgsize}...\n")
+    print(f"Training {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize}...\n")
 
     #Load a Model
     model = YOLO(model_file)
