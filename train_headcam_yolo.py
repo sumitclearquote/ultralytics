@@ -65,8 +65,8 @@ project_name = "final_headcam"
 #name of the dataset folder
 dataset_name = "final_headcam_yolo_dataset"
 yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v3_n"]#, "v3_s","v3_m",]
-imgsizes = [800]
+train_versions = ["v3_s"]#,["v3_n", "v3_s","v3_m",]
+imgsizes = [640]
 
 for train_version in train_versions:
     for imgsize in imgsizes:
