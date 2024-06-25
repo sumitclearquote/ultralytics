@@ -120,7 +120,7 @@ for train_version in train_versions:
             lr = 0.001
             bsize = 8 #batch_size
 
-    print(f"Training {model_file.split('.')[0]} ...\n")
+    print(f"Training {model_file.split('.')[0]} with lr {lr} , batch_size {bsize} and imgsize {imgsize}...\n")
 
     #Load a Model
     model = YOLO(model_file)
