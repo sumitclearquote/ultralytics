@@ -77,7 +77,7 @@ for train_version in train_versions:
             if imgsize == 640:
                 bsize = 128
             elif imgsize == 800:
-                bsize = 64
+                bsize = 80
                 
         elif train_version.endswith("n") and 'p' in train_version:
             # Add other HPs here
