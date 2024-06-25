@@ -91,7 +91,7 @@ for train_version in train_versions:
             if imgsize == 640:
                 bsize = 64
             elif imgsize == 800:
-                bsize = 32
+                bsize = 48
         elif train_version.endswith("s") and 'p' in train_version:
             lr = 0.0001
             model_file = "yolov8s-p2.yaml"
