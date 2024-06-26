@@ -75,7 +75,7 @@ for train_version in train_versions:
             model_file = "yolov8n.yaml"
             lr = 0.001
             if imgsize == 640:
-                bsize = 196 #128fullheadcam
+                bsize = 160 #128fullheadcam
             elif imgsize == 800:
                 bsize = 128 #80
                 
