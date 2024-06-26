@@ -75,9 +75,9 @@ for train_version in train_versions:
             model_file = "yolov8n.yaml"
             lr = 0.001
             if imgsize == 640:
-                bsize = 256 #128fullheadcam
+                bsize = 128 #128fullheadcam
             elif imgsize == 800:
-                bsize = 128 #80
+                bsize = 80 #80
                 
         elif train_version.endswith("n") and 'p' in train_version:
             # Add other HPs here
@@ -89,7 +89,7 @@ for train_version in train_versions:
             lr = 0.001
             model_file = "yolov8s.yaml"
             if imgsize == 640:
-                bsize = 80 #64
+                bsize = 64 #64
             elif imgsize == 800:
                 bsize = 48 #48
         elif train_version.endswith("s") and 'p' in train_version:
@@ -101,9 +101,9 @@ for train_version in train_versions:
             model_file = "yolov8m.yaml"
             lr = 0.001
             if imgsize == 640:
-                bsize = 64 #40
+                bsize = 40 #40
             elif imgsize == 800:
-                bsize = 48 #24
+                bsize = 24 #24
         elif train_version.endswith("m") and 'p' in train_version:
             model_file = "yolov8m-p2.yaml"
             lr = 0.0001
