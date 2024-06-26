@@ -60,13 +60,13 @@ Albumentations.__init__ = __init__
 
 
 # A directory inside "yolo_runs" will be created with the below name
-project_name = "final_headcam"
+project_name = "final_ml16" #"final_headcam"
 
 #name of the dataset folder
-dataset_name = "final_headcam_yolo_dataset"
-yolo_cfg = "final_headcam_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v3_s", "v3_n","v3_m",]
-imgsizes = [640, 800]
+dataset_name = "final_ml16_yolo_dataset"  #"final_headcam_yolo_dataset"
+yolo_cfg = "final_ml16_data.yaml" #name of the yolo cfg yaml file inside dataset
+train_versions = ["v1_s"] #["v1_s", "v1_n","v1_m",]
+imgsizes = [640]  #[640, 800]
 
 for train_version in train_versions:
     for imgsize in imgsizes:
@@ -75,9 +75,9 @@ for train_version in train_versions:
             model_file = "yolov8n.yaml"
             lr = 0.001
             if imgsize == 640:
-                bsize = 128
+                bsize = 256 #128
             elif imgsize == 800:
-                bsize = 80
+                bsize = 128 #80
                 
         elif train_version.endswith("n") and 'p' in train_version:
             # Add other HPs here
@@ -89,9 +89,9 @@ for train_version in train_versions:
             lr = 0.001
             model_file = "yolov8s.yaml"
             if imgsize == 640:
-                bsize = 64
+                bsize = 128 #64
             elif imgsize == 800:
-                bsize = 48
+                bsize = 96 #48
         elif train_version.endswith("s") and 'p' in train_version:
             lr = 0.0001
             model_file = "yolov8s-p2.yaml"
@@ -101,9 +101,9 @@ for train_version in train_versions:
             model_file = "yolov8m.yaml"
             lr = 0.001
             if imgsize == 640:
-                bsize = 40
+                bsize = 64 #40
             elif imgsize == 800:
-                bsize = 24
+                bsize = 48 #24
         elif train_version.endswith("m") and 'p' in train_version:
             model_file = "yolov8m-p2.yaml"
             lr = 0.0001
@@ -130,7 +130,7 @@ for train_version in train_versions:
 
 
         config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-                    'epochs': 120,
+                    'epochs': 1,
                     'lr0':lr, #default is 1e-3
                     'batch': bsize,
                     'imgsz':imgsize,
