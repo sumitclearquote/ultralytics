@@ -66,7 +66,7 @@ project_name = "final_fixedcam"
 #name of the dataset folder
 dataset_name = "final_fixedcam_yolo_dataset"
 yolo_cfg = "final_fixedcam_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v3_n"] #["v3_n", "v3_s","v3_m"]
+train_versions = ["v3_s"] #["v3_n", "v3_s","v3_m"]
 imgsizes = [640] #[640, 480]
 
 for imgsize in imgsizes:
@@ -80,6 +80,7 @@ for imgsize in imgsizes:
                 bsize = 128 #128fullheadcam
             elif imgsize == 480:
                 bsize = 80 #80
+                
         # yolov8s
         elif train_version.endswith("s"):
             # Add other HPs here
@@ -89,6 +90,7 @@ for imgsize in imgsizes:
                 bsize = 128 #128fullheadcam
             elif imgsize == 480:
                 bsize = 80 #80
+                
         # yolov8m      
         elif train_version.endswith("m"):
             model_file = "yolov8m.yaml"
