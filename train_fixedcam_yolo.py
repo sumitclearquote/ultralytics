@@ -96,7 +96,7 @@ for imgsize in imgsizes:
             model_file = "yolov8m.yaml"
             lr = 0.001
             if imgsize == 640:
-                bsize = 48 #128fullheadcam
+                bsize = 8 #128fullheadcam
             elif imgsize == 480:
                 bsize = 80 #80
 
