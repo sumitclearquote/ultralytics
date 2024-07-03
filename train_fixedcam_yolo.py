@@ -66,7 +66,7 @@ project_name = "final_ml18"
 #name of the dataset folder
 dataset_name = "final_ml18_yolo_dataset"
 yolo_cfg = "final_ml18_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v1_n"] #["v1_n", "v1_s","v1_m"]
+train_versions = ["v1_s"] #["v1_n", "v1_s","v1_m"]
 imgsizes = [640] #[640, 480]
 
 for imgsize in imgsizes:
