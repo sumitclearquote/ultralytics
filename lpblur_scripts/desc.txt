@@ -1,0 +1,1 @@
+Copy the script that is to be used to the root dir of ultralytics (outside current folder) and run it. 

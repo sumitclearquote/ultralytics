@@ -8,6 +8,44 @@ from ultralytics import YOLO
 import torch
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
+
+def get_config(model_name, imgsize):
+    ''' Returns the model cfg file, lr and batch size based on the model name and imgsize used
+    '''
+    if model_name.endswith("n"):
+        model_cfg_file = "yolov8n.yaml"
+        lr = 0.001
+        if imgsize == 224:
+            bsize = 256
+        elif imgsize == 320:
+            bsize = 256
+        elif imgsize == 640:
+            bsize = 128
+            
+        if "p" in model_name: #v1_n_p model
+            model_cfg_file = "yolov8n-p2.yaml"
+            lr = 0.0001
+            
+    elif model_name.endswith("s"): #v1_s model
+        model_cfg_file = "yolov8s.yaml"
+        
+        lr = 0.001
+        if imgsize == 224:
+            bsize = 196
+        elif imgsize == 320:
+            bsize = 160
+        elif imgsize == 640:
+            bsize = 96
+            
+        if "p" in model_name: #v1_s_p model
+            model_cfg_file = "yolov8s-p2.yaml"
+            lr = 0.0001
+       
+
+    return model_cfg_file, lr, bsize
+
+
+
 def __init__(self, p=1.0):
     """Initialize the transform object for YOLO bbox formatted params."""
     self.p = p
@@ -57,47 +95,33 @@ Albumentations.__init__ = __init__
 
 
 # A directory inside "yolo_runs" will be created with the below name
-project_name = "final_smartphone"
+project_name = "jack_detection" # the dir where datasets' folder is present and where results in yolo_runs will be stored.
+project_dir = "mahindra" # # Name of project inside 'datadrive'
+server_name = "paintfrmladmin01" # username of the remote machine
 
 #name of the dataset folder
-dataset_name = "final_smartphone_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
-yolo_cfg = "final_smartphone_data.yaml" #name of the yolo cfg yaml file inside dataset
-train_versions = ["v3_n"]
-imgsizes = [320]
+dataset_name = "jack_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
+yolo_cfg = "jack_data.yaml" #name of the yolo cfg yaml file inside dataset
+
+epochs = 1
+train_versions = ["v1_n"] #["v1_n", "v1_s"]
+imgsizes = [224,320]  #[224, 320]
 
 for train_version in train_versions:
     for imgsize in imgsizes:
-        if train_version.endswith("n") and "p" not in train_version:
-            # Add other HPs here
-            model_file = "yolov8n.yaml"
-            lr = 0.001
-            if imgsize == 320:
-                bsize = 512
-            elif imgsize == 640:
-                bsize = 128
-        if train_version.endswith("n") and 'p' in train_version:
-            # Add other HPs here
-            model_file = "yolov8n-p2.yaml"
-            lr = 0.0001
-        elif train_version.endswith("s") and "p" not in train_version:
-            model_file = "yolov8s.yaml"
-            lr = 0.001
-            if imgsize == 320:
-                bsize = 256
-            elif imgsize == 640:
-                bsize = 64
+        model_file, lr, bsize = get_config(train_version, imgsize)
 
-        print(f"Training {model_file.split('.')[0]} ...\n")
+        print(f"Training {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize}...\n")
 
         #Load a Model
         model = YOLO(model_file)
 
-        project_path = f'/home/paintfrmladmin01/datadrive/ssqs/yolo_runs/{project_name}'
+        project_path = f'/home/{server_name}/datadrive/{project_dir}/yolo_runs/{project_name}'
 
+ 
 
-
-        config  ={  'data': f"/home/paintfrmladmin01/datadrive/ssqs/datasets/{dataset_name}/{yolo_cfg}", 
-                    'epochs': 40,
+        config  ={  'data': f"/home/{server_name}/datadrive/{project_dir}/{project_name}/datasets/{dataset_name}/{yolo_cfg}", 
+                    'epochs': epochs,
                     'lr0':lr, #default is 1e-3
                     'batch': bsize,
                     'imgsz':imgsize,
@@ -111,4 +135,3 @@ for train_version in train_versions:
 
         # Train the Model -> yolov8s
         results = model.train(**config)
-#'''
