@@ -31,7 +31,7 @@ def get_config(model_name, imgsize):
         
         lr = 0.001
         if imgsize == 224:
-            bsize = 196
+            bsize = 328
         elif imgsize == 320:
             bsize = 160
         elif imgsize == 640:
@@ -103,7 +103,8 @@ server_name = "paintfrmladmin01" # username of the remote machine
 dataset_name = "jack_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
 yolo_cfg = "jack_data.yaml" #name of the yolo cfg yaml file inside dataset
 
-epochs = 1
+# HYPERPARAMETERS
+epochs = 120
 train_versions = ["v1_n", "v1_s"] #["v1_n", "v1_s"]
 imgsizes = [224,320]  #[224, 320]
 
