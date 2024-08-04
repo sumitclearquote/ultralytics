@@ -105,6 +105,7 @@ yolo_cfg = "jack_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
 epochs = 120
+patience = 60 # After how many epochs to stop training if results do not improve,.
 train_versions = ["v1_n", "v1_s"] #["v1_n", "v1_s"]
 imgsizes = [224,320]  #[224, 320]
 
@@ -127,7 +128,7 @@ for train_version in train_versions:
                     'batch': bsize,
                     'imgsz':imgsize,
                     'device':device,
-                    'patience':10,
+                    'patience':patience,
                     'project':project_path,
                     'name':train_version,
                     'close_mosaic': 0,
