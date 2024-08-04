@@ -16,9 +16,9 @@ def get_config(model_name, imgsize):
         model_cfg_file = "yolov8n.yaml"
         lr = 0.001
         if imgsize == 224:
-            bsize = 256
+            bsize = 512
         elif imgsize == 320:
-            bsize = 256
+            bsize = 384
         elif imgsize == 640:
             bsize = 128
             
@@ -104,7 +104,7 @@ dataset_name = "jack_yolo_dataset" #wheelrim and lifting pads were expanded by 5
 yolo_cfg = "jack_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 epochs = 1
-train_versions = ["v1_n"] #["v1_n", "v1_s"]
+train_versions = ["v1_n", "v1_s"] #["v1_n", "v1_s"]
 imgsizes = [224,320]  #[224, 320]
 
 for train_version in train_versions:
