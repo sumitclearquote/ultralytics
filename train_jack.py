@@ -104,7 +104,7 @@ dataset_name = "jack_yolo_dataset" #wheelrim and lifting pads were expanded by 5
 yolo_cfg = "jack_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 120
+epochs = 250
 patience = 60 # After how many epochs to stop training if results do not improve,.
 train_versions = ["v2_n", "v2_s"]  #-original
 imgsizes = [224, 320]    #-original
