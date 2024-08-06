@@ -68,11 +68,11 @@ def __init__(self, p=1.0):
         ]
         #'''
         #Add custom augmentation here
-        T +=                           [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.25),
-                                        #A.Rotate(limit= 45, p =0.5),
-                                        A.GaussianBlur(p = 0.25),
-                                        #A.Perspective(p=0.3)
-                                        ]
+        # T +=                           [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.25),
+        #                                 #A.Rotate(limit= 45, p =0.5),
+        #                                 A.GaussianBlur(p = 0.25),
+        #                                 #A.Perspective(p=0.3)
+        #                                 ]
         #'''
         
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
@@ -104,10 +104,10 @@ dataset_name = "jack_yolo_dataset" #wheelrim and lifting pads were expanded by 5
 yolo_cfg = "jack_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 1
+epochs = 120
 patience = 60 # After how many epochs to stop training if results do not improve,.
-train_versions = ["trial_n",] #["v1_n", "v1_s"]-original
-imgsizes = [224]  #[224, 320]-original
+train_versions = ["v2_n", "v2_s"]  #-original
+imgsizes = [224, 320]    #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
@@ -130,9 +130,9 @@ for train_version in train_versions:
                     'device':device,
                     'patience':patience,
                     'project':project_path,
-                    'name':train_version,
-                    'close_mosaic': 0,
-                    'mosaic':0.0,
+                    'name':f"{train_version}_{imgsize}",
+                    'close_mosaic': 5,
+                    'mosaic':0.3,
                 }
 
         # Train the Model -> yolov8s
