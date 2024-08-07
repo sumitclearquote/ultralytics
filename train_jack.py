@@ -67,12 +67,12 @@ def __init__(self, p=1.0):
             A.ImageCompression(quality_lower=75, p=0.02),
         ]
         #'''
-        #Add custom augmentation here
-        # T +=                           [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.25),
-        #                                 #A.Rotate(limit= 45, p =0.5),
-        #                                 A.GaussianBlur(p = 0.25),
-        #                                 #A.Perspective(p=0.3)
-        #                                 ]
+        #Add custom augmentation here ====
+        T +=                           [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.25),
+                                        A.Rotate(limit= 45, p =0.5),
+                                        A.GaussianBlur(p = 0.25),
+                                        A.Perspective(p=0.3)
+                                        ]
         #'''
         
         self.transform = A.Compose(T, bbox_params=A.BboxParams(format="yolo", label_fields=["class_labels"]))
@@ -104,9 +104,9 @@ dataset_name = "jack_yolo_dataset" #wheelrim and lifting pads were expanded by 5
 yolo_cfg = "jack_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 250
+epochs = 1
 patience = 60 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v2_n", "v2_s"]  #-original
+train_versions = ['trial_n', 'trial_s'] #["v3_n", "v3_s"]  #-original
 imgsizes = [224, 320]    #-original
 
 for train_version in train_versions:
