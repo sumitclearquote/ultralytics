@@ -27,6 +27,8 @@ def get_config(model_name, imgsize):
         if "p" in model_name: #v1_n_p model
             model_cfg_file = "yolov8n-p2.yaml"
             lr = 0.00001
+            if imgsize == 480:
+                bsize = 64
             if imgsize == 640:
                 bsize = 64
             
@@ -113,13 +115,16 @@ dataset_name = "ic_yolo_dataset" #wheelrim and lifting pads were expanded by 5% 
 yolo_cfg = "ic_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 350
+epochs = 1
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions =["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
+train_versions =  ["v1_p_n", "v1_s", "v1_p_s"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
 imgsizes = [224, 320, 480, 640]    #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
+        
+        if f"{train_version}_{imgsize}" in ["v1_p_n_224", "v1_p_n_320"]:continue
+        
         model_file, lr, bsize = get_config(train_version, imgsize)
 
         print(f"\nTraining {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize} ({epochs} epochs)... ========================================================== >\n")
