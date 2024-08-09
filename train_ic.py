@@ -111,13 +111,13 @@ yolo_cfg = "ic_data.yaml" #name of the yolo cfg yaml file inside dataset
 epochs = 1 #350
 patience = 100 # After how many epochs to stop training if results do not improve,.
 train_versions = ["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
-imgsizes = [224, 320, 480]    #-original
+imgsizes = [640] #[224, 320, 480, 640]    #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
         model_file, lr, bsize = get_config(train_version, imgsize)
 
-        print(f"Training {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize}...\n")
+        print(f"\nTraining {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize}...===================================\n")
 
         #Load a Model
         model = YOLO(model_file)
