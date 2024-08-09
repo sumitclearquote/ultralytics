@@ -26,7 +26,7 @@ def get_config(model_name, imgsize):
             
         if "p" in model_name: #v1_n_p model
             model_cfg_file = "yolov8n-p2.yaml"
-            lr = 0.0001
+            lr = 0.00001
             if imgsize == 640:
                 bsize = 64
             
@@ -45,7 +45,7 @@ def get_config(model_name, imgsize):
             
         if "p" in model_name: #v1_s_p model
             model_cfg_file = "yolov8s-p2.yaml"
-            lr = 0.0001
+            lr = 0.00001
             if imgsize == 480:
                 bsize = 64
             elif imgsize == 640:
