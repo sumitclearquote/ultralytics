@@ -14,7 +14,7 @@ def get_config(model_name, imgsize):
     '''
     if model_name.endswith("n"):
         model_cfg_file = "yolov8n.yaml"
-        lr = 0.001
+        lr = 0.0001 #0.001
         if imgsize == 224:
             bsize = 128
         elif imgsize == 320:
@@ -33,7 +33,7 @@ def get_config(model_name, imgsize):
     elif model_name.endswith("s"): #v1_s model
         model_cfg_file = "yolov8s.yaml"
         
-        lr = 0.001
+        lr = 0.0001 #0.001
         if imgsize == 224:
             bsize = 128
         elif imgsize == 320:
@@ -122,7 +122,7 @@ for train_version in train_versions:
     for imgsize in imgsizes:
         model_file, lr, bsize = get_config(train_version, imgsize)
 
-        print(f"\nTraining {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize}... ========================================================== >\n")
+        print(f"\nTraining {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize} ({epochs} epochs)... ========================================================== >\n")
 
         #Load a Model
         model = YOLO(model_file)
