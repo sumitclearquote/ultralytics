@@ -115,7 +115,7 @@ dataset_name = "ic_yolo_dataset" #wheelrim and lifting pads were expanded by 5% 
 yolo_cfg = "ic_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 150
+epochs = 350
 patience = 100 # After how many epochs to stop training if results do not improve,.
 train_versions =  ["v2_n", "v2_p_n", "v2_s", "v2_p_s"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
 imgsizes = [480, 640]    #-original
