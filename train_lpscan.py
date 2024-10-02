@@ -8,60 +8,7 @@ from ultralytics import YOLO
 import torch
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-
-def get_config(model_name, imgsize):
-    ''' Returns the model cfg file, lr and batch size based on the model name and imgsize used
-    '''
-    if model_name.endswith("n"):
-        model_cfg_file = "yolov8n.yaml"
-        lr = 0.001 #0.001
-        if imgsize == 224:
-            bsize = 128
-        elif imgsize == 320:
-            bsize = 128
-        elif imgsize == 480:
-            bsize = 128
-        elif imgsize == 640:
-            bsize = 96
-            
-        if "p" in model_name: #v1_n_p model
-            model_cfg_file = "yolov8n-p2.yaml"
-            lr = 0.0001
-            if imgsize == 224:
-                bsize = 128
-            elif imgsize == 320:
-                bsize = 128
-            elif imgsize == 480:
-                bsize = 64
-            elif imgsize == 640:
-                bsize = 48
-            
-            
-    elif model_name.endswith("s"): #v1_s model
-        model_cfg_file = "yolov8s.yaml"
-        
-        lr = 0.0001 #0.001
-        if imgsize == 224:
-            bsize = 128
-        elif imgsize == 320:
-            bsize = 128
-        elif imgsize == 480:
-            bsize = 128
-        elif imgsize == 640:
-            bsize = 64
-            
-        if "p" in model_name: #v1_s_p model
-            model_cfg_file = "yolov8s-p2.yaml"
-            lr = 0.00001
-            if imgsize == 480:
-                bsize = 60
-            elif imgsize == 640:
-                bsize = 32
-
-    return model_cfg_file, lr, bsize
-
-
-
+# =============================================================================================================================
 def __init__(self, p=1.0):
     """Initialize the transform object for YOLO bbox formatted params."""
     self.p = p
@@ -103,6 +50,61 @@ def __init__(self, p=1.0):
 # Replace the constructor of the repo with the above one. Use this constructor to add whatever custom augmentations is needed. 
 Albumentations.__init__ = __init__
 
+# ==============================================================================================================================================
+
+def get_config(model_name, imgsize):
+    ''' Returns the model cfg file, lr and batch size based on the model name and imgsize used
+    '''
+    if model_name.endswith("n"):
+        model_cfg_file = "yolov8n.yaml"
+        lr = 0.001 #0.001
+        if imgsize == 224:
+            bsize = 512
+        elif imgsize == 320:
+            bsize = 256
+        elif imgsize == 400:
+            bsize = 128
+        elif imgsize == 640:
+            bsize = 96
+            
+        if "p" in model_name: #v1_n_p model
+            model_cfg_file = "yolov8n-p2.yaml"
+            lr = 0.0001
+            if imgsize == 224:
+                bsize = 128
+            elif imgsize == 320:
+                bsize = 128
+            elif imgsize == 400:
+                bsize = 64
+            elif imgsize == 640:
+                bsize = 48
+            
+            
+    elif model_name.endswith("s"): #v1_s model
+        model_cfg_file = "yolov8s.yaml"
+        
+        lr = 0.0001 #0.001
+        if imgsize == 224:
+            bsize = 128
+        elif imgsize == 320:
+            bsize = 128
+        elif imgsize == 480:
+            bsize = 128
+        elif imgsize == 640:
+            bsize = 64
+            
+        if "p" in model_name: #v1_s_p model
+            model_cfg_file = "yolov8s-p2.yaml"
+            lr = 0.00001
+            if imgsize == 480:
+                bsize = 60
+            elif imgsize == 640:
+                bsize = 32
+
+    return model_cfg_file, lr, bsize
+
+
+
 
 #==============================================================================================================
 
@@ -127,7 +129,7 @@ imgsizes = [224, 320, 400]    #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
-        
+        if f"{train_version}_{imgsize}" in ['v1_n_224', 'v1_n_320']:continue
         #if f"{train_version}_{imgsize}" in ["v1_p_n_224", "v1_p_n_320"]:continue
         
         model_file, lr, bsize = get_config(train_version, imgsize)
