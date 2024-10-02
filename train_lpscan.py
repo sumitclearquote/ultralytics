@@ -154,7 +154,7 @@ for train_version in train_versions:
                     'name':f"{train_version}_{imgsize}",
                     'close_mosaic': 5,
                     'mosaic':0.3,
-                    'workers':0
+                    'workers':8
                 }
 
         # Train the Model -> yolov8s
