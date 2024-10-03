@@ -129,7 +129,7 @@ imgsizes = [224, 320, 416]    #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
-        if f"{train_version}_{imgsize}" in ['v1_n_224', 'v1_n_320']:continue
+        if f"{train_version}_{imgsize}" not in ['v1_n_224', 'v1_n_320']:continue
         #if f"{train_version}_{imgsize}" in ["v1_p_n_224", "v1_p_n_320"]:continue
         
         model_file, lr, bsize = get_config(train_version, imgsize)
