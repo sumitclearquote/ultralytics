@@ -139,7 +139,7 @@ for train_version in train_versions:
         #Load a Model
         model = YOLO(model_file)
 
-        project_path = f'/home/{server_name}/datadrive/{project_dir}/yolo_runs/{project_name}'
+        project_path = f'/home/{server_name}/datadrive/{project_dir}/ocr/yolo_runs/{project_name}'
 
  
 
@@ -153,7 +153,7 @@ for train_version in train_versions:
                     'project':project_path,
                     'name':f"{train_version}_{imgsize}",
                     'close_mosaic': 5,
-                    'mosaic':0.3,
+                    'mosaic':0.4,
                     'workers':8
                 }
 
