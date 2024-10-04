@@ -122,7 +122,7 @@ dataset_name = "final_ocr_dataset_v1" #wheelrim and lifting pads were expanded b
 yolo_cfg = "lp_ocr_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 350
+epochs = 400
 patience = 100 # After how many epochs to stop training if results do not improve,.
 train_versions = ['v1_s'] #["v1_n", "v1_p_n"]        
 imgsizes = [480, 640]    #-original
