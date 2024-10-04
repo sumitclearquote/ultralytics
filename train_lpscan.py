@@ -143,7 +143,7 @@ for train_version in train_versions:
 
  
 
-        config  ={  'data': f"/home/{server_name}/datadrive/{project_dir}/datasets/{dataset_name}/{yolo_cfg}", 
+        config  ={  'data': f"/home/{server_name}/datadrive/{project_dir}/ocr/datasets/{dataset_name}/{yolo_cfg}", 
                     'epochs': epochs,
                     'lr0':lr, #default is 1e-3
                     'batch': bsize,
