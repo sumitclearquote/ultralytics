@@ -83,13 +83,13 @@ def get_config(model_name, imgsize):
     elif model_name.endswith("s"): #v1_s model
         model_cfg_file = "yolov8s.yaml"
         
-        lr = 0.0001 #0.001
+        lr = 0.001 #0.001
         if imgsize == 224:
             bsize = 128
         elif imgsize == 320:
             bsize = 128
         elif imgsize == 480:
-            bsize = 128
+            bsize = 120
         elif imgsize == 640:
             bsize = 64
             
