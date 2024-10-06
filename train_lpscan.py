@@ -108,8 +108,8 @@ def get_config(model_name, imgsize):
             bsize = 32
         elif imgsize == 640:
             bsize = 10
-        elif imgsize == 1000:
-            bsize = 2
+        elif imgsize == 1024:
+            bsize = 8
 
     return model_cfg_file, lr, bsize
 
@@ -135,7 +135,7 @@ yolo_cfg = "lp_ocr_data.yaml" #name of the yolo cfg yaml file inside dataset
 epochs = 1 #80
 patience = 100 # After how many epochs to stop training if results do not improve,.
 train_versions = ['v1_l'] #["v1_n", "v1_p_n"]        
-imgsizes = [1000] #[480, 640]    #-original
+imgsizes = [1024] #[480, 640]    #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
