@@ -100,6 +100,14 @@ def get_config(model_name, imgsize):
                 bsize = 60
             elif imgsize == 640:
                 bsize = 32
+                
+    elif model_name.endswith("l"):
+        model_cfg_file = "yolov8l.yaml"
+        lr = 0.001
+        if imgsize == 480:
+            bsize = 8
+        elif imgsize == 640:
+            bsize = 2
 
     return model_cfg_file, lr, bsize
 
@@ -122,9 +130,9 @@ dataset_name = "final_ocr_dataset_v1" #wheelrim and lifting pads were expanded b
 yolo_cfg = "lp_ocr_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 400
+epochs = 1 #80
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ['v1_s'] #["v1_n", "v1_p_n"]        
+train_versions = ['v1_l'] #["v1_n", "v1_p_n"]        
 imgsizes = [480, 640]    #-original
 
 for train_version in train_versions:
@@ -153,7 +161,7 @@ for train_version in train_versions:
                     'project':project_path,
                     'name':f"{train_version}_{imgsize}",
                     'close_mosaic': 5,
-                    'mosaic':0.4,
+                    'mosaic':0.3,
                     'workers':8
                 }
 
