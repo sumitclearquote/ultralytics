@@ -106,18 +106,18 @@ Albumentations.__init__ = __init__
 
 
 # A directory inside "yolo_runs" will be created with the below name
-project_name = "instrument_panel" # the dir where datasets' folder is present and where results in yolo_runs will be stored.
+project_name = "instrument_panel" # the dir where results in yolo_runs will be stored.
 project_dir = "mahindra" # # Name of project inside 'datadrive'
 server_name = "paintfrmladmin01" # username of the remote machine
 
 #name of the dataset folder
-dataset_name = "ic_yolo_dataset" #wheelrim and lifting pads were expanded by 5% of bbox area
+dataset_name = "ic_yolo_datasetv1" #
 yolo_cfg = "ic_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 350
+epochs = 1 #350
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions =  ["v2_n", "v2_p_n", "v2_s", "v2_p_s"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
+train_versions =  ["v1_n", "v1_p_n", "v1_s", "v1_p_s"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
 imgsizes = [480, 640]    #-original
 
 for train_version in train_versions:
@@ -136,7 +136,7 @@ for train_version in train_versions:
 
  
 
-        config  ={  'data': f"/home/{server_name}/datadrive/{project_dir}/{project_name}/datasets/{dataset_name}/{yolo_cfg}", 
+        config  ={  'data': f"/home/{server_name}/datadrive/{project_dir}/datasets/{dataset_name}/{yolo_cfg}", 
                     'epochs': epochs,
                     'lr0':lr, #default is 1e-3
                     'batch': bsize,
