@@ -122,9 +122,9 @@ dataset_name = "ic_yolo_datasetv1" #
 yolo_cfg = "ic_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 1 #150 #350
+epochs = 150 #150 #350
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v1_s"] #["v1_n", "v1_s", "v1_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
+train_versions = ["v1_n", "v1_s", "v1_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
 imgsizes = [1024] #[480, 640]    #-original
 
 
@@ -154,7 +154,7 @@ for train_version in train_versions:
                     'project':project_path,
                     'name':f"{train_version}_{imgsize}",
                     'close_mosaic': 5,
-                    'mosaic':0.3,
+                    'mosaic':0.4,
                 }
 
         # Train the Model -> yolov8s
