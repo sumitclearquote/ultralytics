@@ -37,7 +37,7 @@ def get_config(model_name, imgsize):
             elif imgsize == 640:
                 bsize = 48
             elif imgsize == 800:
-                bsize = 64
+                bsize = 32
             elif imgsize == 1024:
                 bsize = 16
             
@@ -128,7 +128,7 @@ yolo_cfg = "fuelgauge_data.yaml" #name of the yolo cfg yaml file inside dataset
 # HYPERPARAMETERS
 epochs = 120 #150 #350
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v1_n", "v1_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
+train_versions = ["v1_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
 imgsizes = [800]    #-original
 
 
