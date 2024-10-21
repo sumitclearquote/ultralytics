@@ -122,13 +122,13 @@ project_dir = "mahindra" # # Name of project inside 'datadrive'
 server_name = "paintfrmladmin01" # username of the remote machine
 
 #name of the dataset folder
-dataset_name = "fuelgauge_yolo_datasetv1" #
+dataset_name = "fuelgauge_yolo_datasetv2" #
 yolo_cfg = "fuelgauge_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 120 #150 #350
+epochs = 150 #150 #350
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v1_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
+train_versions = ["v2_n", "v2_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
 imgsizes = [800]    #-original
 
 
