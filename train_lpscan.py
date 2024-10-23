@@ -66,6 +66,10 @@ def get_config(model_name, imgsize):
             bsize = 128
         elif imgsize == 640:
             bsize = 96
+        elif imgsize == 800:
+            bsize = 64
+        elif imgsize == 1024:
+            bsize = 32
             
         if "p" in model_name: #v1_n_p model
             model_cfg_file = "yolov8n-p2.yaml"
@@ -78,6 +82,7 @@ def get_config(model_name, imgsize):
                 bsize = 64
             elif imgsize == 640:
                 bsize = 48
+
             
             
     elif model_name.endswith("s"): #v1_s model
@@ -92,8 +97,11 @@ def get_config(model_name, imgsize):
             bsize = 120
         elif imgsize == 640:
             bsize = 64
+        elif imgsize == 800:
+            bsize = 32
         elif imgsize == 1024:
             bsize = 24
+        
             
         if "p" in model_name: #v1_s_p model
             model_cfg_file = "yolov8s-p2.yaml"
@@ -130,14 +138,14 @@ project_dir = "lpscan" # # Name of project inside 'datadrive'
 server_name = "paintfrmladmin01" # username of the remote machine
 
 #name of the dataset folder
-dataset_name = "final_ocr_dataset_v1" #wheelrim and lifting pads were expanded by 5% of bbox area
+dataset_name = "final_ocr_dataset_v2" #wheelrim and lifting pads were expanded by 5% of bbox area
 yolo_cfg = "lp_ocr_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 80 #80
+epochs = 1 #150
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ['v1_s', 'v1_l'] #["v1_n", "v1_p_n"]        
-imgsizes = [1024] #[480, 640]    #-original
+train_versions = ['v1_n', 'v1_s'] #["v1_n", "v1_p_n"]        
+imgsizes = [800, 1024] #[480, 640]    #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
