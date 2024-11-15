@@ -128,7 +128,7 @@ yolo_cfg = "fuelgauge_data.yaml" #name of the yolo cfg yaml file inside dataset
 # HYPERPARAMETERS
 epochs = 1 #150 
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v2_n", "v2_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
+train_versions = ["v3_n", "v3_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
 imgsizes = [224, 320, 480]    #-original
 
 
