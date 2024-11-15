@@ -16,9 +16,9 @@ def get_config(model_name, imgsize):
         model_cfg_file = "yolov8n.yaml"
         lr = 0.001 #0.001
         if imgsize == 224:
-            bsize = 128
+            bsize = 256
         elif imgsize == 320:
-            bsize = 128
+            bsize = 256
         elif imgsize == 480: 
             #bsize = 128 #10.9GB
             bsize = 144
@@ -126,7 +126,7 @@ dataset_name = "fuelgauge_yolo_datasetv2" #
 yolo_cfg = "fuelgauge_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 1 #150 
+epochs = 150 #150 
 patience = 100 # After how many epochs to stop training if results do not improve,.
 train_versions = ["v3_n", "v3_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
 imgsizes = [224, 320, 480]    #-original
