@@ -83,7 +83,7 @@ project_dir = "mahindra" # # Name of project inside 'datadrive'
 server_name = "paintfrmladmin01" # username of the remote machine
 
 #name of the dataset folder
-dataset_name = "analog_fuelgauge_yolo_dataset" #
+dataset_name = "analog_fuelgauge_yolo_datasetv2" #v2
 yolo_cfg = "analogfuelgauge_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
