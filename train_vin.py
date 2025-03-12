@@ -67,7 +67,7 @@ def get_config(model_name, imgsize):
         elif imgsize == 640:
             bsize = 96
         elif imgsize == 800:
-            bsize = 48
+            bsize = 40
         elif imgsize == 1024:
             bsize = 32
             
