@@ -144,12 +144,12 @@ yolo_cfg = "vin_ocr_data.yaml" #name of the yolo cfg yaml file inside dataset
 # HYPERPARAMETERS
 epochs = 200
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v1_n"]#, "v1_s"] #["v1_n", "v1_p_n"]        
-imgsizes = [800]#, 1024] #[800, 1024]     #-original
+train_versions = ["v1_n", "v1_s"] #["v1_n", "v1_p_n"]        
+imgsizes = [800, 1024] #[800, 1024]     #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
-        #if f"{train_version}_{imgsize}" not in ['v1_n_224', 'v1_n_320']:continue
+        if f"{train_version}_{imgsize}" in ['v1_n_800']:continue
 
         model_file, lr, bsize = get_config(train_version, imgsize)
 
