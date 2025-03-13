@@ -67,7 +67,7 @@ def get_config(model_name, imgsize):
         elif imgsize == 640:
             bsize = 96
         elif imgsize == 800:
-            bsize = 40
+            bsize = 48 #40
         elif imgsize == 1024:
             bsize = 32
             
@@ -144,8 +144,8 @@ yolo_cfg = "vin_ocr_data.yaml" #name of the yolo cfg yaml file inside dataset
 # HYPERPARAMETERS
 epochs = 200
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v1_n", "v1_s"] #["v1_n", "v1_p_n"]        
-imgsizes = [800, 1024] #[800, 1024]     #-original
+train_versions = ["v1_n"]#, "v1_s"] #["v1_n", "v1_p_n"]        
+imgsizes = [800]#, 1024] #[800, 1024]     #-original
 
 for train_version in train_versions:
     for imgsize in imgsizes:
@@ -156,6 +156,9 @@ for train_version in train_versions:
         print(f"\nTraining {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize} ({epochs} epochs)... ========================================================== >\n")
 
         #Load a Model
+        if f"{train_version}_{imgsize}" == "v1_n_800":
+            model_file = "/home/paintfrmladmin01/datadrive/vin/yolo_runs/vin/v1_n_800/weights/last.pt"
+
         model = YOLO(model_file)
 
         project_path = f'/home/{server_name}/datadrive/{project_dir}/yolo_runs/{project_name}'
@@ -173,7 +176,8 @@ for train_version in train_versions:
                     'name':f"{train_version}_{imgsize}",
                     'close_mosaic': 5,
                     'mosaic':0.3,
-                    'workers':8
+                    'workers':8,
+                    'resume':True
                 }
 
         # Train the Model -> yolov8s
