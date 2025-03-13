@@ -142,7 +142,7 @@ dataset_name = "vin_engraved_yolo_v1" #wheelrim and lifting pads were expanded b
 yolo_cfg = "vin_ocr_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 200
+epochs = 120
 patience = 100 # After how many epochs to stop training if results do not improve,.
 train_versions = ["v1_n", "v1_s"] #["v1_n", "v1_p_n"]        
 imgsizes = [800, 1024] #[800, 1024]     #-original
