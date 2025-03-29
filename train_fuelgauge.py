@@ -32,7 +32,9 @@ def get_config(model_name, imgsize):
         if "p" in model_name: #v1_p_n model
             model_cfg_file = "yolov8n-p2.yaml"
             lr = 0.0001
-            if imgsize == 480:
+            if imgsize == 224:
+                bsize = 128
+            elif imgsize == 480:
                 bsize = 64
             elif imgsize == 640:
                 bsize = 48
@@ -118,23 +120,22 @@ Albumentations.__init__ = __init__
 
 # A directory inside "yolo_runs" will be created with the below name
 project_name = "fuelgauge" # the dir where results in yolo_runs will be stored.
-project_dir = "mahindra" # # Name of project inside 'datadrive'
+project_dir = "instrument_cluster" # # Name of project inside 'datadrive'
 server_name = "paintfrmladmin01" # username of the remote machine
 
 #name of the dataset folder
-dataset_name = "fuelgauge_yolo_datasetv2" #
+dataset_name = "fuelgauge_yolo_datasetv3" #
 yolo_cfg = "fuelgauge_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
 epochs = 150 #150 #350
 patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v2_n", "v2_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
-imgsizes = [800]    #-original
+train_versions = ["v1_n", "v1_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
+imgsizes = [224]    #-original
 
 
 for train_version in train_versions:
     for imgsize in imgsizes:
-        
         # dont train these iterations
         #if f"{train_version}_{imgsize}" in ["v1_s_1024"]:continue
         

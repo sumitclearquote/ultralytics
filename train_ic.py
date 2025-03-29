@@ -34,6 +34,8 @@ def get_config(model_name, imgsize):
                 bsize = 64
             elif imgsize == 640:
                 bsize = 48
+            elif imgsize == 800:
+                bsize = 32
             elif imgsize == 1024:
                 bsize = 16
             
@@ -59,6 +61,10 @@ def get_config(model_name, imgsize):
                 bsize = 60
             elif imgsize == 640:
                 bsize = 32
+            elif imgsize == 800:
+                bsize = 32
+            elif imgsize == 1024:
+                bsize = 12
 
     return model_cfg_file, lr, bsize
 
@@ -86,9 +92,9 @@ def __init__(self, p=1.0):
         ]
         #'''
         #Add custom augmentation here ====
-        T +=                           [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.25),
-                                        A.Rotate(limit= (-15, 15), p =0.3),
-                                        A.GaussianBlur(p = 0.25),
+        T +=                           [A.RGBShift(r_shift_limit=(-10, 10), g_shift_limit=(-10, 10), b_shift_limit=(-10, 10), p = 0.2),
+                                        A.Rotate(limit= (-15, 15), p =0.2),
+                                        A.GaussianBlur(p = 0.2),
                                         A.Perspective(p=0.3)
                                         ]
         #'''
@@ -114,18 +120,18 @@ Albumentations.__init__ = __init__
 
 # A directory inside "yolo_runs" will be created with the below name
 project_name = "instrument_panel" # the dir where results in yolo_runs will be stored.
-project_dir = "mahindra" # # Name of project inside 'datadrive'
+project_dir = "instrument_cluster"  # mahindra # # Name of project inside 'datadrive'
 server_name = "paintfrmladmin01" # username of the remote machine
 
 #name of the dataset folder
-dataset_name = "ic_yolo_datasetv1" #
+dataset_name = "ic_yolo_datasetv2" #
 yolo_cfg = "ic_data.yaml" #name of the yolo cfg yaml file inside dataset
 
 # HYPERPARAMETERS
-epochs = 200 #150 #350
-patience = 100 # After how many epochs to stop training if results do not improve,.
-train_versions = ["v1_s", "v1_p_n"]         #["v1_n", "v1_p_n", "v1_s", "v1_p_s"]  #-original
-imgsizes = [640, 1024]    #-original
+epochs = 100 #200og
+patience = 60 # After how many epochs to stop training if results do not improve,.
+train_versions = ["v1_p_n", "v1_p_s"]  #-original
+imgsizes = [1024]    #-original
 
 
 for train_version in train_versions:
@@ -136,8 +142,12 @@ for train_version in train_versions:
         
         model_file, lr, bsize = get_config(train_version, imgsize)
 
-        print(f"\nTraining {model_file.split('.')[0]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize} ({epochs} epochs)... ========================================================== >\n")
+        if f"{train_version}_{imgsize}" == "v1_p_n_1024":
+            model_file = "/home/paintfrmladmin01/datadrive/instrument_cluster/yolo_runs/previous_models/v1_p_n_1024/last.pt"
 
+        print(f"\nTraining {model_file.split('/')[-1]} ({train_version}) with lr {lr} , batch_size {bsize} and imgsize {imgsize} ({epochs} epochs)... ========================================================== >\n")
+
+    
         #Load a Model
         model = YOLO(model_file)
 
